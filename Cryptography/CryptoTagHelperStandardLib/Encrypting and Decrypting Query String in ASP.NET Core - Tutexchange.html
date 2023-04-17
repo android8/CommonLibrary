@@ -1,0 +1,1185 @@
+<!DOCTYPE html>
+<!-- saved from url=(0079)https://tutexchange.com/encrypting-and-decrypting-query-string-in-asp-net-core/ -->
+<html lang="en-US" class="js jetpack-lazy-images-js-enabled"><!--<![endif]--><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	
+			
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="pingback" href="https://tutexchange.com/xmlrpc.php">
+
+		<!--[if lt IE 9]>
+	<script src="https://tutexchange.com/wp-content/themes/Extra/scripts/ext/html5.js" type="text/javascript"></script>
+	<![endif]-->
+
+	<script src="./Encrypting and Decrypting Query String in ASP.NET Core - Tutexchange_files/sdk.js.download" async="" crossorigin="anonymous"></script><script id="facebook-jssdk" src="./Encrypting and Decrypting Query String in ASP.NET Core - Tutexchange_files/sdk.js(1).download"></script><script id="twitter-wjs" src="./Encrypting and Decrypting Query String in ASP.NET Core - Tutexchange_files/widgets.js.download"></script><script type="text/javascript" async="" src="./Encrypting and Decrypting Query String in ASP.NET Core - Tutexchange_files/linkid.js.download"></script><script async="" src="./Encrypting and Decrypting Query String in ASP.NET Core - Tutexchange_files/analytics.js.download"></script><script type="text/javascript">
+		document.documentElement.className = 'js';
+	</script>
+
+	<script>var et_site_url='https://tutexchange.com';var et_post_id='1360';function et_core_page_resource_fallback(a,b){"undefined"===typeof b&&(b=a.sheet.cssRules&&0===a.sheet.cssRules.length);b&&(a.onerror=null,a.onload=null,a.href?a.href=et_site_url+"/?et_core_page_resource="+a.id+et_post_id:a.src&&(a.src=et_site_url+"/?et_core_page_resource="+a.id+et_post_id))}
+</script><!-- Jetpack Site Verification Tags -->
+
+	<!-- This site is optimized with the Yoast SEO plugin v15.7 - https://yoast.com/wordpress/plugins/seo/ -->
+	<title>Encrypting and Decrypting Query String in ASP.NET Core - Tutexchange</title>
+	<meta name="description" content="In this article, we are going to learn how to Encrypting and Decrypting Query String in ASP.NET Core in simple steps.">
+	<meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+	<link rel="canonical" href="https://tutexchange.com/encrypting-and-decrypting-query-string-in-asp-net-core/">
+	<meta property="og:locale" content="en_US">
+	<meta property="og:type" content="article">
+	<meta property="og:title" content="Encrypting and Decrypting Query String in ASP.NET Core - Tutexchange">
+	<meta property="og:description" content="In this article, we are going to learn how to Encrypting and Decrypting Query String in ASP.NET Core in simple steps.">
+	<meta property="og:url" content="https://tutexchange.com/encrypting-and-decrypting-query-string-in-asp-net-core/">
+	<meta property="og:site_name" content="Tutexchange">
+	<meta property="article:published_time" content="2020-12-08T14:27:20+00:00">
+	<meta property="article:modified_time" content="2020-12-08T14:50:15+00:00">
+	<meta property="og:image" content="https://tutexchange.com/wp-content/uploads/2020/12/image-10.png">
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:label1" content="Written by">
+	<meta name="twitter:data1" content="saineshwarbageri">
+	<meta name="twitter:label2" content="Est. reading time">
+	<meta name="twitter:data2" content="8 minutes">
+	<script type="application/ld+json" class="yoast-schema-graph">{"@context":"https://schema.org","@graph":[{"@type":"WebSite","@id":"https://tutexchange.com/#website","url":"https://tutexchange.com/","name":"Tutexchange","description":"Designed for Developer to Learn Understanding Implement","publisher":{"@id":"https://tutexchange.com/#/schema/person/7c8496d68b563730a31e8e88b38b36d4"},"potentialAction":[{"@type":"SearchAction","target":"https://tutexchange.com/?s={search_term_string}","query-input":"required name=search_term_string"}],"inLanguage":"en-US"},{"@type":"ImageObject","@id":"https://tutexchange.com/encrypting-and-decrypting-query-string-in-asp-net-core/#primaryimage","inLanguage":"en-US","url":"https://i1.wp.com/tutexchange.com/wp-content/uploads/2020/12/image-10.png?fit=979%2C391&ssl=1","width":979,"height":391},{"@type":"WebPage","@id":"https://tutexchange.com/encrypting-and-decrypting-query-string-in-asp-net-core/#webpage","url":"https://tutexchange.com/encrypting-and-decrypting-query-string-in-asp-net-core/","name":"Encrypting and Decrypting Query String in ASP.NET Core - Tutexchange","isPartOf":{"@id":"https://tutexchange.com/#website"},"primaryImageOfPage":{"@id":"https://tutexchange.com/encrypting-and-decrypting-query-string-in-asp-net-core/#primaryimage"},"datePublished":"2020-12-08T14:27:20+00:00","dateModified":"2020-12-08T14:50:15+00:00","description":"In this article, we are going to learn how to Encrypting and Decrypting Query String in ASP.NET Core in simple steps.","inLanguage":"en-US","potentialAction":[{"@type":"ReadAction","target":["https://tutexchange.com/encrypting-and-decrypting-query-string-in-asp-net-core/"]}]},{"@type":"Article","@id":"https://tutexchange.com/encrypting-and-decrypting-query-string-in-asp-net-core/#article","isPartOf":{"@id":"https://tutexchange.com/encrypting-and-decrypting-query-string-in-asp-net-core/#webpage"},"author":{"@id":"https://tutexchange.com/#/schema/person/7c8496d68b563730a31e8e88b38b36d4"},"headline":"Encrypting and Decrypting Query String in ASP.NET Core","datePublished":"2020-12-08T14:27:20+00:00","dateModified":"2020-12-08T14:50:15+00:00","mainEntityOfPage":{"@id":"https://tutexchange.com/encrypting-and-decrypting-query-string-in-asp-net-core/#webpage"},"publisher":{"@id":"https://tutexchange.com/#/schema/person/7c8496d68b563730a31e8e88b38b36d4"},"image":{"@id":"https://tutexchange.com/encrypting-and-decrypting-query-string-in-asp-net-core/#primaryimage"},"articleSection":"Blog","inLanguage":"en-US"},{"@type":["Person","Organization"],"@id":"https://tutexchange.com/#/schema/person/7c8496d68b563730a31e8e88b38b36d4","name":"saineshwarbageri","image":{"@type":"ImageObject","@id":"https://tutexchange.com/#personlogo","inLanguage":"en-US","url":"https://secure.gravatar.com/avatar/ebc983b0ea9f55c294f5ea16387e2c77?s=96&d=mm&r=g","caption":"saineshwarbageri"},"logo":{"@id":"https://tutexchange.com/#personlogo"},"description":"I am Microsoft MVP | C# Corner MVP | Code Project MVP | FULL STACK .NET Developer and working on .Net Web Technology (Asp.net, Asp.net Core,.Net Core, C#, Sqlserver, MVC, Windows, Console Application, javascript, jquery, json, ORM Dapper) and also a freelance developer."}]}</script>
+	<!-- / Yoast SEO plugin. -->
+
+
+<link rel="dns-prefetch" href="https://fonts.googleapis.com/">
+<link rel="dns-prefetch" href="https://s.w.org/">
+<link rel="dns-prefetch" href="https://v0.wordpress.com/">
+<link rel="dns-prefetch" href="https://i0.wp.com/">
+<link rel="dns-prefetch" href="https://i1.wp.com/">
+<link rel="dns-prefetch" href="https://i2.wp.com/">
+<link rel="dns-prefetch" href="https://widgets.wp.com/">
+<link rel="dns-prefetch" href="https://s0.wp.com/">
+<link rel="dns-prefetch" href="https://0.gravatar.com/">
+<link rel="dns-prefetch" href="https://1.gravatar.com/">
+<link rel="dns-prefetch" href="https://2.gravatar.com/">
+<link rel="dns-prefetch" href="https://c0.wp.com/">
+<link rel="alternate" type="application/rss+xml" title="Tutexchange » Feed" href="https://tutexchange.com/feed/">
+<link rel="alternate" type="application/rss+xml" title="Tutexchange » Comments Feed" href="https://tutexchange.com/comments/feed/">
+<!-- This site uses the Google Analytics by MonsterInsights plugin v7.15.1 - Using Analytics tracking - https://www.monsterinsights.com/ -->
+<script type="text/javascript" data-cfasync="false">
+    (window.gaDevIds=window.gaDevIds||[]).push("dZGIzZG");
+	var mi_version         = '7.15.1';
+	var mi_track_user      = true;
+	var mi_no_track_reason = '';
+	
+	var disableStr = 'ga-disable-UA-64951974-1';
+
+	/* Function to detect opted out users */
+	function __gaTrackerIsOptedOut() {
+		return document.cookie.indexOf(disableStr + '=true') > -1;
+	}
+
+	/* Disable tracking if the opt-out cookie exists. */
+	if ( __gaTrackerIsOptedOut() ) {
+		window[disableStr] = true;
+	}
+
+	/* Opt-out function */
+	function __gaTrackerOptout() {
+	  document.cookie = disableStr + '=true; expires=Thu, 31 Dec 2099 23:59:59 UTC; path=/';
+	  window[disableStr] = true;
+	}
+
+	if ( 'undefined' === typeof gaOptout ) {
+		function gaOptout() {
+			__gaTrackerOptout();
+		}
+	}
+	
+	if ( mi_track_user ) {
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','//www.google-analytics.com/analytics.js','__gaTracker');
+
+		__gaTracker('create', 'UA-64951974-1', 'auto');
+		__gaTracker('set', 'forceSSL', true);
+		__gaTracker('require', 'displayfeatures');
+		__gaTracker('require', 'linkid', 'linkid.js');
+		__gaTracker('send','pageview');
+	} else {
+		console.log( "" );
+		(function() {
+			/* https://developers.google.com/analytics/devguides/collection/analyticsjs/ */
+			var noopfn = function() {
+				return null;
+			};
+			var noopnullfn = function() {
+				return null;
+			};
+			var Tracker = function() {
+				return null;
+			};
+			var p = Tracker.prototype;
+			p.get = noopfn;
+			p.set = noopfn;
+			p.send = noopfn;
+			var __gaTracker = function() {
+				var len = arguments.length;
+				if ( len === 0 ) {
+					return;
+				}
+				var f = arguments[len-1];
+				if ( typeof f !== 'object' || f === null || typeof f.hitCallback !== 'function' ) {
+					console.log( 'Not running function __gaTracker(' + arguments[0] + " ....) because you are not being tracked. " + mi_no_track_reason );
+					return;
+				}
+				try {
+					f.hitCallback();
+				} catch (ex) {
+
+				}
+			};
+			__gaTracker.create = function() {
+				return new Tracker();
+			};
+			__gaTracker.getByName = noopnullfn;
+			__gaTracker.getAll = function() {
+				return [];
+			};
+			__gaTracker.remove = noopfn;
+			window['__gaTracker'] = __gaTracker;
+					})();
+		}
+</script>
+<!-- / Google Analytics by MonsterInsights -->
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/13.0.1\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/13.0.1\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/tutexchange.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=5.6"}};
+			!function(e,a,t){var r,n,o,i,p=a.createElement("canvas"),s=p.getContext&&p.getContext("2d");function c(e,t){var a=String.fromCharCode;s.clearRect(0,0,p.width,p.height),s.fillText(a.apply(this,e),0,0);var r=p.toDataURL();return s.clearRect(0,0,p.width,p.height),s.fillText(a.apply(this,t),0,0),r===p.toDataURL()}function l(e){if(!s||!s.fillText)return!1;switch(s.textBaseline="top",s.font="600 32px Arial",e){case"flag":return!c([127987,65039,8205,9895,65039],[127987,65039,8203,9895,65039])&&(!c([55356,56826,55356,56819],[55356,56826,8203,55356,56819])&&!c([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]));case"emoji":return!c([55357,56424,8205,55356,57212],[55357,56424,8203,55356,57212])}return!1}function d(e){var t=a.createElement("script");t.src=e,t.defer=t.type="text/javascript",a.getElementsByTagName("head")[0].appendChild(t)}for(i=Array("flag","emoji"),t.supports={everything:!0,everythingExceptFlag:!0},o=0;o<i.length;o++)t.supports[i[o]]=l(i[o]),t.supports.everything=t.supports.everything&&t.supports[i[o]],"flag"!==i[o]&&(t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&t.supports[i[o]]);t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&!t.supports.flag,t.DOMReady=!1,t.readyCallback=function(){t.DOMReady=!0},t.supports.everything||(n=function(){t.readyCallback()},a.addEventListener?(a.addEventListener("DOMContentLoaded",n,!1),e.addEventListener("load",n,!1)):(e.attachEvent("onload",n),a.attachEvent("onreadystatechange",function(){"complete"===a.readyState&&t.readyCallback()})),(r=t.source||{}).concatemoji?d(r.concatemoji):r.wpemoji&&r.twemoji&&(d(r.twemoji),d(r.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script><script src="./Encrypting and Decrypting Query String in ASP.NET Core - Tutexchange_files/wp-emoji-release.min.js.download" type="text/javascript" defer=""></script>
+		<meta content="Extra v.4.7.4" name="generator"><style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+	<link rel="stylesheet" id="wp-block-library-css" href="./Encrypting and Decrypting Query String in ASP.NET Core - Tutexchange_files/style.min.css" type="text/css" media="all">
+<style id="wp-block-library-inline-css" type="text/css">
+.has-text-align-justify{text-align:justify;}
+</style>
+<link rel="stylesheet" id="monsterinsights-popular-posts-style-css" href="./Encrypting and Decrypting Query String in ASP.NET Core - Tutexchange_files/frontend.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="extra-fonts-css" href="./Encrypting and Decrypting Query String in ASP.NET Core - Tutexchange_files/css" type="text/css" media="all">
+<link rel="stylesheet" id="extra-style-css" href="./Encrypting and Decrypting Query String in ASP.NET Core - Tutexchange_files/style.css" type="text/css" media="all">
+<link rel="stylesheet" id="dashicons-css" href="./Encrypting and Decrypting Query String in ASP.NET Core - Tutexchange_files/dashicons.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="enlighterjs-css" href="./Encrypting and Decrypting Query String in ASP.NET Core - Tutexchange_files/enlighterjs.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="social-logos-css" href="./Encrypting and Decrypting Query String in ASP.NET Core - Tutexchange_files/social-logos.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="jetpack_css-css" href="./Encrypting and Decrypting Query String in ASP.NET Core - Tutexchange_files/jetpack.css" type="text/css" media="all">
+<script type="text/javascript" src="./Encrypting and Decrypting Query String in ASP.NET Core - Tutexchange_files/jquery.min.js(1).download" id="jquery-core-js"></script>
+<script type="text/javascript" src="./Encrypting and Decrypting Query String in ASP.NET Core - Tutexchange_files/jquery-migrate.min.js.download" id="jquery-migrate-js"></script>
+<script type="text/javascript" id="jetpack_related-posts-js-extra">
+/* <![CDATA[ */
+var related_posts_js_options = {"post_heading":"h4"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="./Encrypting and Decrypting Query String in ASP.NET Core - Tutexchange_files/related-posts.min.js.download" id="jetpack_related-posts-js"></script>
+<script type="text/javascript" id="monsterinsights-frontend-script-js-extra">
+/* <![CDATA[ */
+var monsterinsights_frontend = {"js_events_tracking":"true","download_extensions":"doc,pdf,ppt,zip,xls,docx,pptx,xlsx","inbound_paths":"[{\"path\":\"\\\/go\\\/\",\"label\":\"affiliate\"},{\"path\":\"\\\/recommend\\\/\",\"label\":\"affiliate\"}]","home_url":"https:\/\/tutexchange.com","hash_tracking":"false"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="./Encrypting and Decrypting Query String in ASP.NET Core - Tutexchange_files/frontend.min.js.download" id="monsterinsights-frontend-script-js"></script>
+<link rel="https://api.w.org/" href="https://tutexchange.com/wp-json/"><link rel="alternate" type="application/json" href="https://tutexchange.com/wp-json/wp/v2/posts/1360"><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://tutexchange.com/xmlrpc.php?rsd">
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://tutexchange.com/wp-includes/wlwmanifest.xml"> 
+<meta name="generator" content="WordPress 5.6">
+<link rel="shortlink" href="https://wp.me/pbyzVN-lW">
+<link rel="alternate" type="application/json+oembed" href="https://tutexchange.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Ftutexchange.com%2Fencrypting-and-decrypting-query-string-in-asp-net-core%2F">
+<link rel="alternate" type="text/xml+oembed" href="https://tutexchange.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Ftutexchange.com%2Fencrypting-and-decrypting-query-string-in-asp-net-core%2F&amp;format=xml">
+<style type="text/css">img#wpstats{display:none}</style><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=1">			<style type="text/css">
+				/* If html does not have either class, do not show lazy loaded images. */
+				html:not( .jetpack-lazy-images-js-enabled ):not( .js ) .jetpack-lazy-image {
+					display: none;
+				}
+			</style>
+			<script>
+				document.documentElement.classList.add(
+					'jetpack-lazy-images-js-enabled'
+				);
+			</script>
+		<link rel="icon" href="https://i1.wp.com/tutexchange.com/wp-content/uploads/2020/09/cropped-2020-09-26_18-28-59.png?fit=32%2C32&amp;ssl=1" sizes="32x32">
+<link rel="icon" href="https://i1.wp.com/tutexchange.com/wp-content/uploads/2020/09/cropped-2020-09-26_18-28-59.png?fit=192%2C192&amp;ssl=1" sizes="192x192">
+<link rel="apple-touch-icon" href="https://i1.wp.com/tutexchange.com/wp-content/uploads/2020/09/cropped-2020-09-26_18-28-59.png?fit=180%2C180&amp;ssl=1">
+<meta name="msapplication-TileImage" content="https://i1.wp.com/tutexchange.com/wp-content/uploads/2020/09/cropped-2020-09-26_18-28-59.png?fit=270%2C270&amp;ssl=1">
+<link rel="stylesheet" id="et-extra-customizer-global-cached-inline-styles" href="./Encrypting and Decrypting Query String in ASP.NET Core - Tutexchange_files/et-extra-customizer-global-16098532704437.min.css" onerror="et_core_page_resource_fallback(this, true)" onload="et_core_page_resource_fallback(this)"><style>[data-columns]::before{visibility:hidden;position:absolute;font-size:1px;}</style><style id="im-embed-css">.btn_container{display:inline}.im-checkout-btn{outline:none;text-decoration:none;cursor:pointer;text-align:center;display:block;font-family:"Open Sans", "Lucida Grande", "Lucida Sans", Tahoma, sans-serif;transition:0.3s}.im-checkout-btn.btn--light{color:#fff;letter-spacing:1px;text-shadow:rgba(0,0,0,0.6) 0 1px 1px;padding:0.6em 0.7em;border:1px solid rgba(59,122,50,0.3);border-bottom:1px solid rgba(0,0,0,0.7);border-radius:4px;background:#75c26a;background-image:-webkit-linear-gradient(top, rgba(255,255,255,0.3), rgba(0,0,0,0.25));background-image:-moz-linear-gradient(top, rgba(255,255,255,0.3), rgba(0,0,0,0.25));background-image:-o-linear-gradient(top, rgba(255,255,255,0.3), rgba(0,0,0,0.25));background-image:linear-gradient(to bottom, rgba(255,255,255,0.1), rgba(0,0,0,0.25));box-shadow:inset 0 1px rgba(255,255,255,0.4),inset 0 0 0 1px rgba(255,255,255,0.15),inset 0 -1px 3px rgba(0,0,0,0.3),0 1px 3px rgba(0,0,0,0.2);line-height:1.2em;margin:0.3em 0}.im-checkout-btn.btn--light:focus,.im-checkout-btn.btn--light:hover{color:adjust-lightness(#fff, 5%);background:adjust-lightness(#75c26a, 5%);background-image:-webkit-linear-gradient(top, rgba(255,255,255,0.15), rgba(0,0,0,0.35));box-shadow:inset 0 1px 0px rgba(255,255,255,0.45),inset 0 0 0 1px rgba(255,255,255,0.2),inset 0 -1px 3px rgba(0,0,0,0.3),0 1px 2px 1px rgba(0,0,0,0.25)}.im-checkout-btn.btn--light:active,.im-checkout-btn.btn--light.active{text-shadow:none;color:#eeeeee;background:adjust-lightness(#75c26a, -4%);background-image:-webkit-linear-gradient(top, rgba(255,255,255,0.07), rgba(0,0,0,0.1));background-image:-moz-linear-gradient(top, rgba(255,255,255,0.07), rgba(0,0,0,0.1));background-image:-o-linear-gradient(top, rgba(255,255,255,0.07), rgba(0,0,0,0.1));background-image:linear-gradient(top, rgba(255,255,255,0.07), rgba(0,0,0,0.1));box-shadow:inset 0 1px 4px rgba(0,0,0,0.3),0 2px 2px rgba(255,255,255,0.3)}.im-checkout-btn.btn--light:hover,.im-checkout-btn.btn--light:focus,.im-checkout-btn.btn--light.active{text-decoration:none}.im-checkout-btn.btn--dark{color:#302b2f;letter-spacing:1px;text-shadow:rgba(0,0,0,0.6) 0 1px 1px;padding:0.6em 0.7em;border:1px solid rgba(186,160,19,0.3);border-bottom:1px solid rgba(0,0,0,0.7);border-radius:4px;background:#efd85d;background-image:-webkit-linear-gradient(top, rgba(255,255,255,0.3), rgba(0,0,0,0.25));background-image:-moz-linear-gradient(top, rgba(255,255,255,0.3), rgba(0,0,0,0.25));background-image:-o-linear-gradient(top, rgba(255,255,255,0.3), rgba(0,0,0,0.25));background-image:linear-gradient(to bottom, rgba(255,255,255,0.1), rgba(0,0,0,0.25));box-shadow:inset 0 1px rgba(255,255,255,0.4),inset 0 0 0 1px rgba(255,255,255,0.15),inset 0 -1px 3px rgba(0,0,0,0.3),0 1px 3px rgba(0,0,0,0.2);line-height:1.2em;margin:0.3em 0;letter-spacing:0px;font-weight:bold;text-shadow:rgba(255,255,255,0.4) 0 1px}.im-checkout-btn.btn--dark:focus,.im-checkout-btn.btn--dark:hover{color:adjust-lightness(#302b2f, 5%);background:adjust-lightness(#efd85d, 5%);background-image:-webkit-linear-gradient(top, rgba(255,255,255,0.15), rgba(0,0,0,0.35));box-shadow:inset 0 1px 0px rgba(255,255,255,0.45),inset 0 0 0 1px rgba(255,255,255,0.2),inset 0 -1px 3px rgba(0,0,0,0.3),0 1px 2px 1px rgba(0,0,0,0.25)}.im-checkout-btn.btn--dark:active,.im-checkout-btn.btn--dark.active{text-shadow:none;color:#eeeeee;background:adjust-lightness(#efd85d, -4%);background-image:-webkit-linear-gradient(top, rgba(255,255,255,0.07), rgba(0,0,0,0.1));background-image:-moz-linear-gradient(top, rgba(255,255,255,0.07), rgba(0,0,0,0.1));background-image:-o-linear-gradient(top, rgba(255,255,255,0.07), rgba(0,0,0,0.1));background-image:linear-gradient(top, rgba(255,255,255,0.07), rgba(0,0,0,0.1));box-shadow:inset 0 1px 4px rgba(0,0,0,0.3),0 2px 2px rgba(255,255,255,0.3)}.im-checkout-btn.btn--flat{background:#75c26a;box-shadow:none;border:1px solid adjust-lightness(#75c26a, -10%);text-shadow:none;border-radius:1.5em;padding:0.6em 1em;color:#fff}.im-checkout-btn.btn--flat:focus,.im-checkout-btn.btn--flat:hover{background:#fff;color:#75c26a;text-shadow:none;box-shadow:none}.im-checkout-btn.btn--flat-dark{background:#fff;box-shadow:none;border:1px solid adjust-lightness(#fff, -10%);text-shadow:none;border-radius:1.5em;padding:0.6em 1em;color:#75c26a}.im-checkout-btn.btn--flat-dark:focus,.im-checkout-btn.btn--flat-dark:hover{background:#75c26a;color:#fff;text-shadow:none;box-shadow:none}.im-checkout-btn.btn--default{color:#fff;background:#75c26a;letter-spacing:1px;padding:12px 8px;margin:0 auto;opacity:0.9;border-radius:4px}.im-checkout-btn.btn--default:focus,.im-checkout-btn.btn--default:hover,.im-checkout-btn.btn--default:active,.im-checkout-btn.btn--default.active{opacity:1}.im-checkout-layout{background:transparent;text-align:center;width:300px}.im-checkout-layout .layout-vertical{width:300px}.im-checkout-layout .layout-horizontal{width:600px;display:flex}.im-checkout-layout .layout-horizontal .im-checkout,.im-checkout-layout .layout-horizontal .checkout-description{margin-left:20px}.im-checkout-layout .checkout-image{height:252px;width:300px;border-radius:4px;margin-bottom:20px;max-width:300px}.im-checkout-layout .checkout-description{margin:0;overflow:scroll;font-family:sans-serif;font-size:16px;color:#4d4d4d;margin-bottom:20px;max-width:300px}.im-modal{overflow-y:auto}.im-modal iframe{height:100%;width:100%}@-webkit-keyframes pace-spinner{0%{-webkit-transform:rotate(0deg);transform:rotate(0deg)}100%{-webkit-transform:rotate(360deg);transform:rotate(360deg)}}@-moz-keyframes pace-spinner{0%{-moz-transform:rotate(0deg);transform:rotate(0deg)}100%{-moz-transform:rotate(360deg);transform:rotate(360deg)}}@-o-keyframes pace-spinner{0%{-o-transform:rotate(0deg);transform:rotate(0deg)}100%{-o-transform:rotate(360deg);transform:rotate(360deg)}}@-ms-keyframes pace-spinner{0%{-ms-transform:rotate(0deg);transform:rotate(0deg)}100%{-ms-transform:rotate(360deg);transform:rotate(360deg)}}@keyframes pace-spinner{0%{transform:rotate(0deg);transform:rotate(0deg)}100%{transform:rotate(360deg);transform:rotate(360deg)}}.iframe-container{height:100%}.iframe-container .iframe-loader-wrapper{display:none}.iframe-container .iframe{transition:all 0.2s;visibility:visible;opacity:1;height:100%;position:relative;background:none;display:block;border:0px none transparent;margin:0px;padding:0px}.iframe-container.loader .iframe-loader-wrapper{display:block;position:relative;height:100%}.iframe-container.loader .iframe-loader-wrapper .iframe-loader{display:block;position:fixed;top:50%;left:50%;margin-left:-20px;margin-top:-20px;width:40px;height:40px;border:solid 2px transparent;border-top-color:#46DF89;border-left-color:#46DF89;border-radius:40px;-webkit-animation:pace-spinner 800ms linear infinite;-moz-animation:pace-spinner 800ms linear infinite;-ms-animation:pace-spinner 800ms linear infinite;-o-animation:pace-spinner 800ms linear infinite;animation:pace-spinner 800ms linear infinite}.iframe-container.loader .iframe{visibility:hidden;opacity:0}.im-background-overlay{min-height:100%;transition:0.3s ease-out;position:fixed;top:0px;left:0px;width:100%;height:100%;background:rgba(241,244,242,0.94)}.im-checkout{max-width:300px;margin-bottom:20px}iframe{border:none !important}</style><style id="fit-vids-style">.fluid-width-video-wrapper{width:100%;position:relative;padding:0;}.fluid-width-video-wrapper iframe,.fluid-width-video-wrapper object,.fluid-width-video-wrapper embed {position:absolute;top:0;left:0;width:100%;height:100%;}</style><style type="text/css">.IN-6d5494f8-69f0-4a9d-8c6b-3e3c3eb1b33b-3npS60y-EvfF7G_lioSx2Q{display:block!important;border:1px solid #cdcfd2!important;background-color:#fff!important;color:#373a3d!important;width:100vw!important}.IN-6d5494f8-69f0-4a9d-8c6b-3e3c3eb1b33b-3npS60y-EvfF7G_lioSx2Q .IN-6d5494f8-69f0-4a9d-8c6b-3e3c3eb1b33b-24GeGuJgk9LrMLp7qVvlyz{background:#6a7e89!important;color:#fff!important;padding:10px!important;font-size:18px!important;font-family:sans-serif!important}.IN-6d5494f8-69f0-4a9d-8c6b-3e3c3eb1b33b-3npS60y-EvfF7G_lioSx2Q .IN-6d5494f8-69f0-4a9d-8c6b-3e3c3eb1b33b-KVjdulkCFfUZps29EbgAC{background:#f3f6f8!important;border-bottom:1px solid #cdcfd2!important}.IN-6d5494f8-69f0-4a9d-8c6b-3e3c3eb1b33b-3npS60y-EvfF7G_lioSx2Q .IN-6d5494f8-69f0-4a9d-8c6b-3e3c3eb1b33b-KVjdulkCFfUZps29EbgAC>*{margin-right:10px!important}.IN-6d5494f8-69f0-4a9d-8c6b-3e3c3eb1b33b-3npS60y-EvfF7G_lioSx2Q .IN-6d5494f8-69f0-4a9d-8c6b-3e3c3eb1b33b-1OeZ2PQ98oAp6Vc5mMc6V5{list-style:none!important}.IN-6d5494f8-69f0-4a9d-8c6b-3e3c3eb1b33b-3npS60y-EvfF7G_lioSx2Q .IN-6d5494f8-69f0-4a9d-8c6b-3e3c3eb1b33b-vCwYmWF_l83ScZBrGnRoi,.IN-6d5494f8-69f0-4a9d-8c6b-3e3c3eb1b33b-3npS60y-EvfF7G_lioSx2Q .IN-6d5494f8-69f0-4a9d-8c6b-3e3c3eb1b33b-1OeZ2PQ98oAp6Vc5mMc6V5{margin:0!important;padding:0!important;width:100%!important;display:block!important}.IN-6d5494f8-69f0-4a9d-8c6b-3e3c3eb1b33b-3npS60y-EvfF7G_lioSx2Q .IN-6d5494f8-69f0-4a9d-8c6b-3e3c3eb1b33b-vCwYmWF_l83ScZBrGnRoi:not(:last-child){border-bottom:1px solid #cdcfd2!important}.IN-6d5494f8-69f0-4a9d-8c6b-3e3c3eb1b33b-3npS60y-EvfF7G_lioSx2Q .IN-6d5494f8-69f0-4a9d-8c6b-3e3c3eb1b33b-1XQZkb-FlHWABUp4_uShaZ{color:inherit!important;cursor:pointer!important;width:100%!important;display:inline-block!important;margin:10px!important}.IN-6d5494f8-69f0-4a9d-8c6b-3e3c3eb1b33b-3npS60y-EvfF7G_lioSx2Q .IN-6d5494f8-69f0-4a9d-8c6b-3e3c3eb1b33b-1XTzMvb2XKitWz0mFLlyyp{margin:5px!important;display:block!important;width:auto!important;white-space:pre!important;overflow-x:scroll!important;background:inherit!important;color:inherit!important;font-family:monospace}.IN-6d5494f8-69f0-4a9d-8c6b-3e3c3eb1b33b-3npS60y-EvfF7G_lioSx2Q .IN-6d5494f8-69f0-4a9d-8c6b-3e3c3eb1b33b-1XTzMvb2XKitWz0mFLlyyp:not(.IN-6d5494f8-69f0-4a9d-8c6b-3e3c3eb1b33b-39QUvFFn5B7GMcqMQkOXZ3){display:none!important}.IN-6d5494f8-69f0-4a9d-8c6b-3e3c3eb1b33b-3npS60y-EvfF7G_lioSx2Q .IN-6d5494f8-69f0-4a9d-8c6b-3e3c3eb1b33b-295DY3nO0DbJWMsOqmjCli{background:#f5f5f5!important;color:#5a5a5a!important}.IN-6d5494f8-69f0-4a9d-8c6b-3e3c3eb1b33b-3npS60y-EvfF7G_lioSx2Q.IN-6d5494f8-69f0-4a9d-8c6b-3e3c3eb1b33b-1aQZwu6CUzAf2zUcI7tg0Q .IN-6d5494f8-69f0-4a9d-8c6b-3e3c3eb1b33b-295DY3nO0DbJWMsOqmjCli{display:none!important}.IN-6d5494f8-69f0-4a9d-8c6b-3e3c3eb1b33b-3npS60y-EvfF7G_lioSx2Q .IN-6d5494f8-69f0-4a9d-8c6b-3e3c3eb1b33b-38EPFyKXMtoP12rPlmrHxs{background:#e6f7ff!important;color:#006097!important}.IN-6d5494f8-69f0-4a9d-8c6b-3e3c3eb1b33b-3npS60y-EvfF7G_lioSx2Q.IN-6d5494f8-69f0-4a9d-8c6b-3e3c3eb1b33b-3W4ZnQjhoGfT1gTNcqRXdi .IN-6d5494f8-69f0-4a9d-8c6b-3e3c3eb1b33b-38EPFyKXMtoP12rPlmrHxs{display:none!important}.IN-6d5494f8-69f0-4a9d-8c6b-3e3c3eb1b33b-3npS60y-EvfF7G_lioSx2Q .IN-6d5494f8-69f0-4a9d-8c6b-3e3c3eb1b33b-HGYnfzlmgOZ-l7eANhQe_{background:#fff3ea!important;color:#993a00!important}.IN-6d5494f8-69f0-4a9d-8c6b-3e3c3eb1b33b-3npS60y-EvfF7G_lioSx2Q.IN-6d5494f8-69f0-4a9d-8c6b-3e3c3eb1b33b-24e52A11B1UIErbKHtBmqc .IN-6d5494f8-69f0-4a9d-8c6b-3e3c3eb1b33b-HGYnfzlmgOZ-l7eANhQe_{display:none!important}.IN-6d5494f8-69f0-4a9d-8c6b-3e3c3eb1b33b-3npS60y-EvfF7G_lioSx2Q .IN-6d5494f8-69f0-4a9d-8c6b-3e3c3eb1b33b-jji74ZzulHScD0OAD_G7h{background:#fef2f1!important;color:#b10823!important}.IN-6d5494f8-69f0-4a9d-8c6b-3e3c3eb1b33b-3npS60y-EvfF7G_lioSx2Q.IN-6d5494f8-69f0-4a9d-8c6b-3e3c3eb1b33b-28jAOA7cDee-95LvwGsOP- .IN-6d5494f8-69f0-4a9d-8c6b-3e3c3eb1b33b-jji74ZzulHScD0OAD_G7h{display:none!important}.IN-6d5494f8-69f0-4a9d-8c6b-3e3c3eb1b33b-1G9ISYhSF8XoOmdcl0yKDu{background-color:#0073b1!important;border:0!important;border-radius:2px!important;box-sizing:border-box!important;color:#fff!important;cursor:pointer!important;display:inline-block!important;font-family:-apple-system,system-ui,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Fira Sans,Ubuntu,Oxygen,Oxygen Sans,Cantarell,Droid Sans,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Lucida Grande,Helvetica,Arial,sans-serif!important;font-weight:600!important;overflow:hidden!important;outline-width:2px!important;position:relative!important;text-align:center!important;text-decoration:none!important;vertical-align:middle!important;white-space:nowrap!important}.IN-6d5494f8-69f0-4a9d-8c6b-3e3c3eb1b33b-1G9ISYhSF8XoOmdcl0yKDu:disabled{cursor:not-allowed!important;opacity:.7!important}.IN-6d5494f8-69f0-4a9d-8c6b-3e3c3eb1b33b-1G9ISYhSF8XoOmdcl0yKDu:not(:disabled):not(.IN-6d5494f8-69f0-4a9d-8c6b-3e3c3eb1b33b-1zhzkayakwEXovVYUbq5Gy):hover{background-color:#006097!important}.IN-6d5494f8-69f0-4a9d-8c6b-3e3c3eb1b33b-1G9ISYhSF8XoOmdcl0yKDu:not(:disabled):not(.IN-6d5494f8-69f0-4a9d-8c6b-3e3c3eb1b33b-1zhzkayakwEXovVYUbq5Gy):active{background-color:#004b7c!important}.IN-6d5494f8-69f0-4a9d-8c6b-3e3c3eb1b33b-1G9ISYhSF8XoOmdcl0yKDu.IN-6d5494f8-69f0-4a9d-8c6b-3e3c3eb1b33b-1zhzkayakwEXovVYUbq5Gy{background-color:#fff!important;color:#0073b1!important;box-shadow:inset 0 0 0 1px rgba(0,0,0,.3)!important}.IN-6d5494f8-69f0-4a9d-8c6b-3e3c3eb1b33b-1G9ISYhSF8XoOmdcl0yKDu.IN-6d5494f8-69f0-4a9d-8c6b-3e3c3eb1b33b-1zhzkayakwEXovVYUbq5Gy:not(:disabled):hover{color:#006097!important}.IN-6d5494f8-69f0-4a9d-8c6b-3e3c3eb1b33b-1G9ISYhSF8XoOmdcl0yKDu.IN-6d5494f8-69f0-4a9d-8c6b-3e3c3eb1b33b-1zhzkayakwEXovVYUbq5Gy:not(:disabled):active{color:#004b7c!important}.IN-6d5494f8-69f0-4a9d-8c6b-3e3c3eb1b33b-1G9ISYhSF8XoOmdcl0yKDu>xdoor-icon{display:inline-block!important;height:100%!important;vertical-align:top!important}.IN-6d5494f8-69f0-4a9d-8c6b-3e3c3eb1b33b-1G9ISYhSF8XoOmdcl0yKDu>xdoor-icon>svg{pointer-events:none!important}.IN-6d5494f8-69f0-4a9d-8c6b-3e3c3eb1b33b-1G9ISYhSF8XoOmdcl0yKDu.IN-6d5494f8-69f0-4a9d-8c6b-3e3c3eb1b33b-7inSbaAsvG5bf7w6lJTEr{font-size:10px!important;height:16px!important;line-height:16px!important;padding:0 6px!important}.IN-6d5494f8-69f0-4a9d-8c6b-3e3c3eb1b33b-1G9ISYhSF8XoOmdcl0yKDu.IN-6d5494f8-69f0-4a9d-8c6b-3e3c3eb1b33b-7inSbaAsvG5bf7w6lJTEr>xdoor-icon{margin-left:-6px!important;margin-right:3px!important}.IN-6d5494f8-69f0-4a9d-8c6b-3e3c3eb1b33b-1G9ISYhSF8XoOmdcl0yKDu.IN-6d5494f8-69f0-4a9d-8c6b-3e3c3eb1b33b-7inSbaAsvG5bf7w6lJTEr>xdoor-icon>svg{height:16px!important;width:16px!important}.IN-6d5494f8-69f0-4a9d-8c6b-3e3c3eb1b33b-1G9ISYhSF8XoOmdcl0yKDu.IN-6d5494f8-69f0-4a9d-8c6b-3e3c3eb1b33b-7inSbaAsvG5bf7w6lJTEr.IN-6d5494f8-69f0-4a9d-8c6b-3e3c3eb1b33b-2lrEjt4SOTxqrYsv1piG4c>xdoor-icon{margin-right:-6px!important}.IN-6d5494f8-69f0-4a9d-8c6b-3e3c3eb1b33b-1G9ISYhSF8XoOmdcl0yKDu,.IN-6d5494f8-69f0-4a9d-8c6b-3e3c3eb1b33b-1G9ISYhSF8XoOmdcl0yKDu.IN-6d5494f8-69f0-4a9d-8c6b-3e3c3eb1b33b-3uCBSbQNVNf2QjqHe1rfb6{font-size:11px!important;height:20px!important;line-height:20px!important;padding:0 7px!important}.IN-6d5494f8-69f0-4a9d-8c6b-3e3c3eb1b33b-1G9ISYhSF8XoOmdcl0yKDu.IN-6d5494f8-69f0-4a9d-8c6b-3e3c3eb1b33b-3uCBSbQNVNf2QjqHe1rfb6>xdoor-icon,.IN-6d5494f8-69f0-4a9d-8c6b-3e3c3eb1b33b-1G9ISYhSF8XoOmdcl0yKDu>xdoor-icon{margin-left:-7px!important;margin-right:3.5px!important}.IN-6d5494f8-69f0-4a9d-8c6b-3e3c3eb1b33b-1G9ISYhSF8XoOmdcl0yKDu.IN-6d5494f8-69f0-4a9d-8c6b-3e3c3eb1b33b-3uCBSbQNVNf2QjqHe1rfb6>xdoor-icon>svg,.IN-6d5494f8-69f0-4a9d-8c6b-3e3c3eb1b33b-1G9ISYhSF8XoOmdcl0yKDu>xdoor-icon>svg{height:20px!important;width:20px!important}.IN-6d5494f8-69f0-4a9d-8c6b-3e3c3eb1b33b-1G9ISYhSF8XoOmdcl0yKDu.IN-6d5494f8-69f0-4a9d-8c6b-3e3c3eb1b33b-3uCBSbQNVNf2QjqHe1rfb6.IN-6d5494f8-69f0-4a9d-8c6b-3e3c3eb1b33b-2lrEjt4SOTxqrYsv1piG4c>xdoor-icon,.IN-6d5494f8-69f0-4a9d-8c6b-3e3c3eb1b33b-1G9ISYhSF8XoOmdcl0yKDu.IN-6d5494f8-69f0-4a9d-8c6b-3e3c3eb1b33b-2lrEjt4SOTxqrYsv1piG4c>xdoor-icon{margin-right:-7px!important}.IN-6d5494f8-69f0-4a9d-8c6b-3e3c3eb1b33b-1G9ISYhSF8XoOmdcl0yKDu.IN-6d5494f8-69f0-4a9d-8c6b-3e3c3eb1b33b-21Smv9YG-5V6M6KP-5v2WG{font-size:14px!important;height:24px!important;line-height:24px!important;padding:0 12px!important}.IN-6d5494f8-69f0-4a9d-8c6b-3e3c3eb1b33b-1G9ISYhSF8XoOmdcl0yKDu.IN-6d5494f8-69f0-4a9d-8c6b-3e3c3eb1b33b-21Smv9YG-5V6M6KP-5v2WG>xdoor-icon{margin-left:-12px!important;margin-right:6px!important}.IN-6d5494f8-69f0-4a9d-8c6b-3e3c3eb1b33b-1G9ISYhSF8XoOmdcl0yKDu.IN-6d5494f8-69f0-4a9d-8c6b-3e3c3eb1b33b-21Smv9YG-5V6M6KP-5v2WG>xdoor-icon>svg{height:24px!important;width:24px!important}.IN-6d5494f8-69f0-4a9d-8c6b-3e3c3eb1b33b-1G9ISYhSF8XoOmdcl0yKDu.IN-6d5494f8-69f0-4a9d-8c6b-3e3c3eb1b33b-21Smv9YG-5V6M6KP-5v2WG.IN-6d5494f8-69f0-4a9d-8c6b-3e3c3eb1b33b-2lrEjt4SOTxqrYsv1piG4c>xdoor-icon{margin-right:-12px!important}.IN-6d5494f8-69f0-4a9d-8c6b-3e3c3eb1b33b-1G9ISYhSF8XoOmdcl0yKDu.IN-6d5494f8-69f0-4a9d-8c6b-3e3c3eb1b33b-1TGdQUTLZdNG4R87OfAB-q{font-size:16px!important;height:32px!important;line-height:32px!important;padding:0 16px!important}.IN-6d5494f8-69f0-4a9d-8c6b-3e3c3eb1b33b-1G9ISYhSF8XoOmdcl0yKDu.IN-6d5494f8-69f0-4a9d-8c6b-3e3c3eb1b33b-1TGdQUTLZdNG4R87OfAB-q>xdoor-icon{margin-left:-16px!important;margin-right:8px!important}.IN-6d5494f8-69f0-4a9d-8c6b-3e3c3eb1b33b-1G9ISYhSF8XoOmdcl0yKDu.IN-6d5494f8-69f0-4a9d-8c6b-3e3c3eb1b33b-1TGdQUTLZdNG4R87OfAB-q>xdoor-icon>svg{height:32px!important;width:32px!important}.IN-6d5494f8-69f0-4a9d-8c6b-3e3c3eb1b33b-1G9ISYhSF8XoOmdcl0yKDu.IN-6d5494f8-69f0-4a9d-8c6b-3e3c3eb1b33b-1TGdQUTLZdNG4R87OfAB-q.IN-6d5494f8-69f0-4a9d-8c6b-3e3c3eb1b33b-2lrEjt4SOTxqrYsv1piG4c>xdoor-icon{margin-right:-16px!important}</style><link rel="preload" as="script" href="https://static.im-cdn.com/assets/js/bundle/payments.bundle.d33875db33ea.js"><link rel="preload" as="script" href="https://static.im-cdn.com/assets/vendors/modernizr.custom.10803.5a933898da84.js"><link rel="preload" as="style" href="https://static.im-cdn.com/assets/stylesheets/zeus-links.d307997fbc7e.css"><script charset="utf-8" src="./Encrypting and Decrypting Query String in ASP.NET Core - Tutexchange_files/button.63c51c903061d0dbd843c41e8a00aa5a.js.download"></script><style type="text/css" data-fbcssmodules="css:fb.css.basecss:fb.css.dialog css:fb.css.iframewidget">.fb_hidden{position:absolute;top:-10000px;z-index:10001}.fb_reposition{overflow:hidden;position:relative}.fb_invisible{display:none}.fb_reset{background:none;border:0;border-spacing:0;color:#000;cursor:auto;direction:ltr;font-family:"lucida grande", tahoma, verdana, arial, sans-serif;font-size:11px;font-style:normal;font-variant:normal;font-weight:normal;letter-spacing:normal;line-height:1;margin:0;overflow:visible;padding:0;text-align:left;text-decoration:none;text-indent:0;text-shadow:none;text-transform:none;visibility:visible;white-space:normal;word-spacing:normal}.fb_reset>div{overflow:hidden}@keyframes fb_transform{from{opacity:0;transform:scale(.95)}to{opacity:1;transform:scale(1)}}.fb_animate{animation:fb_transform .3s forwards}
+.fb_dialog{background:rgba(82, 82, 82, .7);position:absolute;top:-10000px;z-index:10001}.fb_dialog_advanced{border-radius:8px;padding:10px}.fb_dialog_content{background:#fff;color:#373737}.fb_dialog_close_icon{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 0 transparent;cursor:pointer;display:block;height:15px;position:absolute;right:18px;top:17px;width:15px}.fb_dialog_mobile .fb_dialog_close_icon{left:5px;right:auto;top:5px}.fb_dialog_padding{background-color:transparent;position:absolute;width:1px;z-index:-1}.fb_dialog_close_icon:hover{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 -15px transparent}.fb_dialog_close_icon:active{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 -30px transparent}.fb_dialog_iframe{line-height:0}.fb_dialog_content .dialog_title{background:#6d84b4;border:1px solid #365899;color:#fff;font-size:14px;font-weight:bold;margin:0}.fb_dialog_content .dialog_title>span{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/yd/r/Cou7n-nqK52.gif) no-repeat 5px 50%;float:left;padding:5px 0 7px 26px}body.fb_hidden{height:100%;left:0;margin:0;overflow:visible;position:absolute;top:-10000px;transform:none;width:100%}.fb_dialog.fb_dialog_mobile.loading{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/ya/r/3rhSv5V8j3o.gif) white no-repeat 50% 50%;min-height:100%;min-width:100%;overflow:hidden;position:absolute;top:0;z-index:10001}.fb_dialog.fb_dialog_mobile.loading.centered{background:none;height:auto;min-height:initial;min-width:initial;width:auto}.fb_dialog.fb_dialog_mobile.loading.centered #fb_dialog_loader_spinner{width:100%}.fb_dialog.fb_dialog_mobile.loading.centered .fb_dialog_content{background:none}.loading.centered #fb_dialog_loader_close{clear:both;color:#fff;display:block;font-size:18px;padding-top:20px}#fb-root #fb_dialog_ipad_overlay{background:rgba(0, 0, 0, .4);bottom:0;left:0;min-height:100%;position:absolute;right:0;top:0;width:100%;z-index:10000}#fb-root #fb_dialog_ipad_overlay.hidden{display:none}.fb_dialog.fb_dialog_mobile.loading iframe{visibility:hidden}.fb_dialog_mobile .fb_dialog_iframe{position:sticky;top:0}.fb_dialog_content .dialog_header{background:linear-gradient(from(#738aba), to(#2c4987));border-bottom:1px solid;border-color:#043b87;box-shadow:white 0 1px 1px -1px inset;color:#fff;font:bold 14px Helvetica, sans-serif;text-overflow:ellipsis;text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0;vertical-align:middle;white-space:nowrap}.fb_dialog_content .dialog_header table{height:43px;width:100%}.fb_dialog_content .dialog_header td.header_left{font-size:12px;padding-left:5px;vertical-align:middle;width:60px}.fb_dialog_content .dialog_header td.header_right{font-size:12px;padding-right:5px;vertical-align:middle;width:60px}.fb_dialog_content .touchable_button{background:linear-gradient(from(#4267B2), to(#2a4887));background-clip:padding-box;border:1px solid #29487d;border-radius:3px;display:inline-block;line-height:18px;margin-top:3px;max-width:85px;padding:4px 12px;position:relative}.fb_dialog_content .dialog_header .touchable_button input{background:none;border:none;color:#fff;font:bold 12px Helvetica, sans-serif;margin:2px -12px;padding:2px 6px 3px 6px;text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0}.fb_dialog_content .dialog_header .header_center{color:#fff;font-size:16px;font-weight:bold;line-height:18px;text-align:center;vertical-align:middle}.fb_dialog_content .dialog_content{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/y9/r/jKEcVPZFk-2.gif) no-repeat 50% 50%;border:1px solid #4a4a4a;border-bottom:0;border-top:0;height:150px}.fb_dialog_content .dialog_footer{background:#f5f6f7;border:1px solid #4a4a4a;border-top-color:#ccc;height:40px}#fb_dialog_loader_close{float:left}.fb_dialog.fb_dialog_mobile .fb_dialog_close_icon{visibility:hidden}#fb_dialog_loader_spinner{animation:rotateSpinner 1.2s linear infinite;background-color:transparent;background-image:url(https://static.xx.fbcdn.net/rsrc.php/v3/yD/r/t-wz8gw1xG1.png);background-position:50% 50%;background-repeat:no-repeat;height:24px;width:24px}@keyframes rotateSpinner{0%{transform:rotate(0deg)}100%{transform:rotate(360deg)}}
+.fb_iframe_widget{display:inline-block;position:relative}.fb_iframe_widget span{display:inline-block;position:relative;text-align:justify}.fb_iframe_widget iframe{position:absolute}.fb_iframe_widget_fluid_desktop,.fb_iframe_widget_fluid_desktop span,.fb_iframe_widget_fluid_desktop iframe{max-width:100%}.fb_iframe_widget_fluid_desktop iframe{min-width:220px;position:relative}.fb_iframe_widget_lift{z-index:1}.fb_iframe_widget_fluid{display:inline}.fb_iframe_widget_fluid span{width:100%}</style></head>
+<body class="post-template-default single single-post postid-1360 single-format-standard et_extra et_fullwidth_nav et_fullwidth_secondary_nav et_non_fixed_nav et_smooth_scroll et_pb_gutters3 et_primary_nav_dropdown_animation_Default et_secondary_nav_dropdown_animation_Default with_sidebar with_sidebar_right et_includes_sidebar et-db et_minified_js et_minified_css chrome">
+	<div id="page-container" class="page-container">
+				<!-- Header -->
+		<header class="header left-right">
+						<!-- #top-header -->
+			<div id="top-header" style="">
+				<div class="container">
+
+					<!-- Secondary Nav -->
+											<div id="et-secondary-nav" class="et-trending">
+						
+							<!-- ET Trending -->
+							<div id="et-trending">
+
+								<!-- ET Trending Button -->
+								<a id="et-trending-button" href="https://tutexchange.com/encrypting-and-decrypting-query-string-in-asp-net-core/#" title="">
+									<span></span>
+									<span></span>
+									<span></span>
+								</a>
+
+								<!-- ET Trending Label -->
+								<h4 id="et-trending-label">
+									TRENDING:								</h4>
+
+								<!-- ET Trending Post Loop -->
+								<div id="et-trending-container">
+																											<div id="et-trending-post-1436" class="et-trending-post et-trending-latest" style="">
+											<a href="https://tutexchange.com/learn-asp-net-core-web-api-from-project/">Learn asp.net core web API From Project</a>
+										</div>
+																			<div id="et-trending-post-824" class="et-trending-post" style="display: none;">
+											<a href="https://tutexchange.com/quickdesk-project-description-and-working/">QuickDesk Project Description and working</a>
+										</div>
+																			<div id="et-trending-post-744" class="et-trending-post" style="display: none;">
+											<a href="https://tutexchange.com/uploading-download-and-delete-files-in-azure-blob-storage-using-asp-net-core-3-1/">Uploading Download and Delete files in Azure Blob Stora...</a>
+										</div>
+																									</div>
+							</div>
+							
+												</div>
+					
+					<!-- #et-info -->
+					<div id="et-info">
+
+						
+						<!-- .et-extra-social-icons -->
+						<ul class="et-extra-social-icons" style="">
+																																														<li class="et-extra-social-icon facebook">
+									<a href="https://www.facebook.com/Tutexchange/" class="et-extra-icon et-extra-icon-background-hover et-extra-icon-facebook"></a>
+								</li>
+																																															<li class="et-extra-social-icon twitter">
+									<a href="https://twitter.com/saihacksoft" class="et-extra-icon et-extra-icon-background-hover et-extra-icon-twitter"></a>
+								</li>
+																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																		</ul>
+						
+						<!-- .et-top-search -->
+												<div class="et-top-search" style="">
+							<form role="search" class="et-search-form" method="get" action="https://tutexchange.com/">
+			<input type="search" class="et-search-field" placeholder="Search" value="" name="s" title="Search for:">
+			<button class="et-search-submit"></button>
+		</form>						</div>
+						
+						<!-- cart -->
+											</div>
+				</div><!-- /.container -->
+			</div><!-- /#top-header -->
+
+			
+			<!-- Main Header -->
+			<div id="main-header-wrapper">
+				<div id="main-header" data-fixed-height="90">
+					<div class="container">
+					<!-- ET Ad -->
+						
+						
+						<!-- Logo -->
+						<a class="logo" href="https://tutexchange.com/" data-fixed-height="51">
+							<img src="./Encrypting and Decrypting Query String in ASP.NET Core - Tutexchange_files/tlogo.png" alt="Tutexchange" id="logo">
+						</a>
+
+						
+						<!-- ET Navigation -->
+						<div id="et-navigation" class="">
+							<ul id="et-menu" class="nav"><li id="menu-item-10" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-10"><a href="https://tutexchange.com/">Home</a></li>
+<li id="menu-item-514" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-514"><a href="https://tutexchange.com/free-open-source-projects/">Projects</a>
+<ul class="sub-menu">
+	<li id="menu-item-1418" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1418"><a href="https://tutexchange.com/frapper-the-open-source-project/">Frapper (THE Open Source Project)</a></li>
+	<li id="menu-item-1397" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1397"><a href="https://tutexchange.com/free-open-source-projects/free-help-desk-software/">QUICK DESK DATABASE PRICING</a></li>
+</ul>
+</li>
+<li id="menu-item-205" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-205"><a href="https://tutexchange.com/about-me/">About Me</a></li>
+<li id="menu-item-1401" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1401"><a href="https://tutexchange.com/contact-us/">Contact</a></li>
+</ul>							<div id="et-mobile-navigation">
+			<span class="show-menu">
+				<div class="show-menu-button">
+					<span></span>
+					<span></span>
+					<span></span>
+				</div>
+				<p>Select Page</p>
+			</span>
+			<nav>
+			<div id="et-info">
+
+						
+						<!-- .et-extra-social-icons -->
+						<ul class="et-extra-social-icons" style="">
+																																														<li class="et-extra-social-icon facebook">
+									<a href="https://www.facebook.com/Tutexchange/" class="et-extra-icon et-extra-icon-background-hover et-extra-icon-facebook"></a>
+								</li>
+																																															<li class="et-extra-social-icon twitter">
+									<a href="https://twitter.com/saihacksoft" class="et-extra-icon et-extra-icon-background-hover et-extra-icon-twitter"></a>
+								</li>
+																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																		</ul>
+						
+						<!-- .et-top-search -->
+												<div class="et-top-search" style="">
+							<form role="search" class="et-search-form" method="get" action="https://tutexchange.com/">
+			<input type="search" class="et-search-field" placeholder="Search" value="" name="s" title="Search for:">
+			<button class="et-search-submit"></button>
+		</form>						</div>
+						
+						<!-- cart -->
+											</div><ul id="et-extra-mobile-menu" class="et_extra_mobile_menu"><li id="menu-item-10" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-10 et_first_mobile_item"><a href="https://tutexchange.com/">Home</a></li>
+<li id="menu-item-514" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-514"><a href="https://tutexchange.com/free-open-source-projects/">Projects</a>
+<ul class="sub-menu">
+	<li id="menu-item-1418" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1418"><a href="https://tutexchange.com/frapper-the-open-source-project/">Frapper (THE Open Source Project)</a></li>
+	<li id="menu-item-1397" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1397"><a href="https://tutexchange.com/free-open-source-projects/free-help-desk-software/">QUICK DESK DATABASE PRICING</a></li>
+</ul>
+</li>
+<li id="menu-item-205" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-205"><a href="https://tutexchange.com/about-me/">About Me</a></li>
+<li id="menu-item-1401" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1401"><a href="https://tutexchange.com/contact-us/">Contact</a></li>
+</ul></nav>
+		</div> <!-- /#et-mobile-navigation -->						</div><!-- /#et-navigation -->
+					</div><!-- /.container -->
+				</div><!-- /#main-header -->
+			</div><!-- /#main-header-wrapper -->
+
+		</header>
+
+				<div id="main-content">
+		<div class="container">
+		<div id="content-area" class="clearfix">
+			<div class="et_pb_extra_column_main">
+																<article id="post-1360" class="module single-post-module post-1360 post type-post status-publish format-standard hentry category-blog et-doesnt-have-format-content et_post_format-et-post-format-standard">
+														<div class="post-header">
+								<h1 class="entry-title">Encrypting and Decrypting Query String in ASP.NET Core</h1>
+								<div class="post-meta vcard">
+									<p>Posted by <a href="https://tutexchange.com/author/saineshwarbageri/" class="url fn" title="Posts by saineshwarbageri" rel="author">saineshwarbageri</a> | <span class="updated">Dec 8, 2020</span> | <a href="https://tutexchange.com/category/blog/" rel="tag">Blog</a> | <a class="comments-link" href="https://tutexchange.com/encrypting-and-decrypting-query-string-in-asp-net-core/#comments">0 <span title="comment count" class="comment-bubble post-meta-icon"></span></a> | <span class="rating-stars" title="Rating: 0.00"><span class="post-meta-icon rating-star rating-star-empty rating-star-1"></span>
+<span class="post-meta-icon rating-star rating-star-empty rating-star-2"></span>
+<span class="post-meta-icon rating-star rating-star-empty rating-star-3"></span>
+<span class="post-meta-icon rating-star rating-star-empty rating-star-4"></span>
+<span class="post-meta-icon rating-star rating-star-empty rating-star-5"></span>
+</span></p>
+								</div>
+							</div>
+							
+							
+														
+							<div class="post-wrap">
+															<div class="post-content entry-content">
+									
+<p>In this article, we are going to learn how to Encrypting and Decrypting Query String in ASP.NET Core in simple steps.</p>
+
+
+
+<p>Security is the first priority of any web application hosted on production. We use the query string to send sensitive and non-sensitive data from one page to another page. The sensitive data must be secure for doing that we need to encrypt query string. For encryption and decryption are going to use Data Protection APIs of ASP.NET Core.</p>
+
+
+
+<div class="wp-block-file"><a href="https://tutexchange.com/wp-content/uploads/2020/12/WebQuery.7z"><strong>Sample Implemented Project </strong></a><a href="https://tutexchange.com/wp-content/uploads/2020/12/WebQuery.7z" class="wp-block-file__button" download="">Download</a></div>
+
+
+
+<figure class="wp-block-image size-large"><img loading="eager" width="979" height="391" src="./Encrypting and Decrypting Query String in ASP.NET Core - Tutexchange_files/image-10.png" alt="" class="wp-image-1375 jetpack-lazy-image jetpack-lazy-image--handled" data-recalc-dims="1" srcset="https://i1.wp.com/tutexchange.com/wp-content/uploads/2020/12/image-10.png?w=979&amp;ssl=1 979w, https://i1.wp.com/tutexchange.com/wp-content/uploads/2020/12/image-10.png?resize=300%2C120&amp;ssl=1 300w, https://i1.wp.com/tutexchange.com/wp-content/uploads/2020/12/image-10.png?resize=768%2C307&amp;ssl=1 768w" data-lazy-loaded="1" sizes="(max-width: 979px) 100vw, 979px"><noscript><img loading="lazy" width="979" height="391" src="https://i1.wp.com/tutexchange.com/wp-content/uploads/2020/12/image-10.png?resize=979%2C391&#038;ssl=1" alt="" class="wp-image-1375" srcset="https://i1.wp.com/tutexchange.com/wp-content/uploads/2020/12/image-10.png?w=979&amp;ssl=1 979w, https://i1.wp.com/tutexchange.com/wp-content/uploads/2020/12/image-10.png?resize=300%2C120&amp;ssl=1 300w, https://i1.wp.com/tutexchange.com/wp-content/uploads/2020/12/image-10.png?resize=768%2C307&amp;ssl=1 768w" sizes="(max-width: 979px) 100vw, 979px" data-recalc-dims="1" /></noscript></figure>
+
+
+
+<p>Things we are going to Cover.</p>
+
+
+
+<ol type="1"><li>Creating Custom Anchor tag helper for Encrypting Query string</li><li>Creating Action Filter Attribute for Decrypting Query String values</li><li>Custom Helper for Generating Encrypting URL in application</li></ol>
+
+
+
+<p><strong>Getting Started with Encrypting and Decrypting Query String in ASP.NET Core</strong></p>
+
+
+
+<p>We are going to create a new application with Name <strong>WebQuery</strong> for demo as shown below.</p>
+
+
+
+<figure class="wp-block-image size-full is-resized"><img loading="eager" src="./Encrypting and Decrypting Query String in ASP.NET Core - Tutexchange_files/image.png" alt="" class="wp-image-1362 jetpack-lazy-image jetpack-lazy-image--handled" width="718" height="236" data-recalc-dims="1" srcset="https://i2.wp.com/tutexchange.com/wp-content/uploads/2020/12/image.png?w=718&amp;ssl=1 718w, https://i2.wp.com/tutexchange.com/wp-content/uploads/2020/12/image.png?resize=300%2C99&amp;ssl=1 300w" data-lazy-loaded="1" sizes="(max-width: 718px) 100vw, 718px"><noscript><img loading="lazy" src="https://i2.wp.com/tutexchange.com/wp-content/uploads/2020/12/image.png?resize=718%2C236&#038;ssl=1" alt="" class="wp-image-1362" width="718" height="236" srcset="https://i2.wp.com/tutexchange.com/wp-content/uploads/2020/12/image.png?w=718&amp;ssl=1 718w, https://i2.wp.com/tutexchange.com/wp-content/uploads/2020/12/image.png?resize=300%2C99&amp;ssl=1 300w" sizes="(max-width: 718px) 100vw, 718px" data-recalc-dims="1" /></noscript></figure>
+
+
+
+<p>Next, we are going to set Project Name “<strong>WebQuery</strong>” and location. In last part, we are going to choose .Net Core framework and ASP.NET Core Version 3.1 as the framework for application and few advance settings for such as configuring https and enabling docker we are not going to enable docker settings for this project.</p>
+
+
+
+<figure class="wp-block-image size-large is-resized"><img loading="eager" src="./Encrypting and Decrypting Query String in ASP.NET Core - Tutexchange_files/image-1.png" alt="" class="wp-image-1363 jetpack-lazy-image jetpack-lazy-image--handled" width="718" height="498" data-recalc-dims="1" srcset="https://i2.wp.com/tutexchange.com/wp-content/uploads/2020/12/image-1.png?w=718&amp;ssl=1 718w, https://i2.wp.com/tutexchange.com/wp-content/uploads/2020/12/image-1.png?resize=300%2C208&amp;ssl=1 300w" data-lazy-loaded="1" sizes="(max-width: 718px) 100vw, 718px"><noscript><img loading="lazy" src="https://i2.wp.com/tutexchange.com/wp-content/uploads/2020/12/image-1.png?resize=718%2C498&#038;ssl=1" alt="" class="wp-image-1363" width="718" height="498" srcset="https://i2.wp.com/tutexchange.com/wp-content/uploads/2020/12/image-1.png?w=718&amp;ssl=1 718w, https://i2.wp.com/tutexchange.com/wp-content/uploads/2020/12/image-1.png?resize=300%2C208&amp;ssl=1 300w" sizes="(max-width: 718px) 100vw, 718px" data-recalc-dims="1" /></noscript></figure>
+
+
+
+<p>Now finally click on create button to create a project.</p>
+
+
+
+<p><strong><u>Project structure</u></strong></p>
+
+
+
+<p>The project structure generated according to the configuration.</p>
+
+
+
+<figure class="wp-block-image size-large"><img loading="eager" width="315" height="306" src="./Encrypting and Decrypting Query String in ASP.NET Core - Tutexchange_files/image-2.png" alt="" class="wp-image-1364 jetpack-lazy-image jetpack-lazy-image--handled" data-recalc-dims="1" srcset="https://i1.wp.com/tutexchange.com/wp-content/uploads/2020/12/image-2.png?w=315&amp;ssl=1 315w, https://i1.wp.com/tutexchange.com/wp-content/uploads/2020/12/image-2.png?resize=300%2C291&amp;ssl=1 300w" data-lazy-loaded="1" sizes="(max-width: 315px) 100vw, 315px"><noscript><img loading="lazy" width="315" height="306" src="https://i1.wp.com/tutexchange.com/wp-content/uploads/2020/12/image-2.png?resize=315%2C306&#038;ssl=1" alt="" class="wp-image-1364" srcset="https://i1.wp.com/tutexchange.com/wp-content/uploads/2020/12/image-2.png?w=315&amp;ssl=1 315w, https://i1.wp.com/tutexchange.com/wp-content/uploads/2020/12/image-2.png?resize=300%2C291&amp;ssl=1 300w" sizes="(max-width: 315px) 100vw, 315px" data-recalc-dims="1" /></noscript></figure>
+
+
+
+<p>After creating project next, we are going make custom anchor tag helper which will encrypt query string values.</p>
+
+
+
+<p><strong><u>Creating Custom Anchor tag helper for Encrypting Query string</u></strong></p>
+
+
+
+<p>We are going to take values similar to anchor tag helper Text, Area, Action name, Controller, Route values.</p>
+
+
+
+<p>Query string which we are going to generate we are going to add some additional parameters such as GUID and Datetime value which will make string random and will also have expiry to it such that a person cannot store this string and use it next time.</p>
+
+
+
+<p>Let’s start with creating a folder with name <strong>CustomTagHelper </strong>and a class with name <strong>SecureLinkTagHelper</strong>.</p>
+
+
+
+<figure class="wp-block-image size-large"><img loading="eager" width="301" height="266" src="./Encrypting and Decrypting Query String in ASP.NET Core - Tutexchange_files/image-3.png" alt="" class="wp-image-1365 jetpack-lazy-image jetpack-lazy-image--handled" data-recalc-dims="1" data-lazy-loaded="1"><noscript><img loading="lazy" width="301" height="266" src="https://i0.wp.com/tutexchange.com/wp-content/uploads/2020/12/image-3.png?resize=301%2C266&#038;ssl=1" alt="" class="wp-image-1365" data-recalc-dims="1"/></noscript></figure>
+
+
+
+<p>After creating class, we are going to inherit it with TagHelper class. And add <strong>HtmlTargetElement</strong> Attributes.</p>
+
+
+
+<figure class="wp-block-image size-large"><img loading="eager" width="691" height="519" src="./Encrypting and Decrypting Query String in ASP.NET Core - Tutexchange_files/image-4.png" alt="" class="wp-image-1366 jetpack-lazy-image jetpack-lazy-image--handled" data-recalc-dims="1" srcset="https://i0.wp.com/tutexchange.com/wp-content/uploads/2020/12/image-4.png?w=691&amp;ssl=1 691w, https://i0.wp.com/tutexchange.com/wp-content/uploads/2020/12/image-4.png?resize=300%2C225&amp;ssl=1 300w" data-lazy-loaded="1" sizes="(max-width: 691px) 100vw, 691px"><noscript><img loading="lazy" width="691" height="519" src="https://i0.wp.com/tutexchange.com/wp-content/uploads/2020/12/image-4.png?resize=691%2C519&#038;ssl=1" alt="" class="wp-image-1366" srcset="https://i0.wp.com/tutexchange.com/wp-content/uploads/2020/12/image-4.png?w=691&amp;ssl=1 691w, https://i0.wp.com/tutexchange.com/wp-content/uploads/2020/12/image-4.png?resize=300%2C225&amp;ssl=1 300w" sizes="(max-width: 691px) 100vw, 691px" data-recalc-dims="1" /></noscript></figure>
+
+
+
+<p>Next, we are going to set input Attributes to this class.</p>
+
+
+
+<pre class="wp-block-code"><code>using Microsoft.AspNetCore.DataProtection;
+using Microsoft.AspNetCore.Mvc.Rendering;
+using Microsoft.AspNetCore.Razor.TagHelpers;
+using System;
+using System.Collections.Generic;
+using System.Globalization;
+
+namespace WebQuery.CustomTagHelper
+{
+    [HtmlTargetElement("a", Attributes = "s-text")]
+    [HtmlTargetElement("a", Attributes = "s-areas")]
+    [HtmlTargetElement("a", Attributes = "s-actionName")]
+    [HtmlTargetElement("a", Attributes = "s-controllerName")]
+    [HtmlTargetElement("a", Attributes = "s-rK1")]
+    [HtmlTargetElement("a", Attributes = "s-rV1")]
+    [HtmlTargetElement("a", Attributes = "s-rK2")]
+    [HtmlTargetElement("a", Attributes = "s-rV2")]
+    [HtmlTargetElement("a", Attributes = "s-rK3")]
+    [HtmlTargetElement("a", Attributes = "s-rV3")]
+    [HtmlTargetElement("a", Attributes = "s-rK4")]
+    [HtmlTargetElement("a", Attributes = "s-rV4")]
+    [HtmlTargetElement("a", Attributes = "s-rK5")]
+    [HtmlTargetElement("a", Attributes = "s-rV5")]
+    public class SecureLinkTagHelper : TagHelper
+    {
+        #region Input Attributes
+
+        [HtmlAttributeName("s-text")]
+        // ReSharper disable once InconsistentNaming
+        public string text { get; set; }
+
+        [HtmlAttributeName("s-areas")]
+        // ReSharper disable once InconsistentNaming
+        public string areas { get; set; } = null;
+
+        [HtmlAttributeName("s-actionName")]
+        // ReSharper disable once InconsistentNaming
+        public string actionName { get; set; }
+
+        [HtmlAttributeName("s-controllerName")]
+        // ReSharper disable once InconsistentNaming
+        public string controllerName { get; set; }
+
+        [HtmlAttributeName("s-rK1")]
+        // ReSharper disable once InconsistentNaming
+        public string routekey1 { get; set; } = null;
+
+        [HtmlAttributeName("s-rV1")]
+        // ReSharper disable once InconsistentNaming
+        public string routeValues1 { get; set; } = null;
+
+        [HtmlAttributeName("s-rK2")]
+        // ReSharper disable once InconsistentNaming
+        public string routekey2 { get; set; } = null;
+
+        [HtmlAttributeName("s-rV2")]
+        // ReSharper disable once InconsistentNaming
+        public string routeValues2 { get; set; } = null;
+
+        [HtmlAttributeName("s-rK3")]
+        // ReSharper disable once InconsistentNaming
+        public string routekey3 { get; set; } = null;
+
+        [HtmlAttributeName("s-rV3")]
+        // ReSharper disable once InconsistentNaming
+        public string routeValues3 { get; set; } = null;
+
+        [HtmlAttributeName("s-rK4")]
+        // ReSharper disable once InconsistentNaming
+        public string routekey4 { get; set; } = null;
+
+        [HtmlAttributeName("s-rV4")]
+        // ReSharper disable once InconsistentNaming
+        public string routeValues4 { get; set; } = null;
+
+        [HtmlAttributeName("s-rK5")]
+        // ReSharper disable once InconsistentNaming
+        public string routekey5 { get; set; } = null;
+
+        [HtmlAttributeName("s-rV5")]
+        // ReSharper disable once InconsistentNaming
+        public string routeValues5 { get; set; } = null;
+
+        #endregion
+    }
+}
+</code></pre>
+
+
+
+<p>After adding Attribute next, we are going to right logic in Process Method of <strong>SecureLinkTagHelper </strong>class.</p>
+
+
+
+<ol type="1"><li>Creating a Protector</li><li>Creating an Anchor tag</li><li>Reading Parameter Values</li><li>Creating Random String</li><li>Creating a Query string</li><li>Setting TagHelperOutput</li></ol>
+
+
+
+<pre class="wp-block-code"><code>  public override void Process(TagHelperContext context, TagHelperOutput output)
+        {
+            var dataProtectionProvider = DataProtectionProvider.Create("WebQuery");
+            var protector = dataProtectionProvider.CreateProtector("WebQuery.QueryStrings");
+
+            TagBuilder tag = new TagBuilder("a");
+            string queryString = string.Empty;
+            string mainString;
+            IList&lt;string&gt; strings = new List&lt;string&gt;();
+
+
+            if (routekey1 != null &amp;&amp; routeValues1 != null)
+            {
+                strings.Add($"{routekey1}={routeValues1}");
+            }
+
+            if (routekey2 != null &amp;&amp; routeValues2 != null)
+            {
+                strings.Add($"{routekey2}={routeValues2}");
+            }
+
+            if (routekey3 != null &amp;&amp; routeValues3 != null)
+            {
+                strings.Add($"{routekey3}={routeValues3}");
+            }
+
+            if (routekey4 != null &amp;&amp; routeValues4 != null)
+            {
+                strings.Add($"{routekey4}={routeValues4}");
+            }
+
+            if (routekey5 != null &amp;&amp; routeValues5 != null)
+            {
+                strings.Add($"{routekey5}={routeValues5}");
+            }
+
+            if (routekey1 == null &amp;&amp; routeValues1 == null
+                                  &amp;&amp; routekey2 == null &amp;&amp; routeValues2 == null
+                                  &amp;&amp; routekey3 == null &amp;&amp; routeValues3 == null
+                                  &amp;&amp; routekey4 == null &amp;&amp; routeValues4 == null
+                                  &amp;&amp; routekey5 == null &amp;&amp; routeValues5 == null)
+            {
+                if (String.IsNullOrEmpty(areas))
+                {
+                    mainString = $"/{controllerName}/{actionName}";
+                }
+                else
+                {
+                    mainString = $"/{areas}/{controllerName}/{actionName}";
+                }
+            }
+            else
+            {
+
+                queryString += string.Join(",", strings);
+
+                var format = new CultureInfo("en-GB");
+                var random = Guid.NewGuid().ToString("N").Substring(0, 10).ToUpper();
+                var values = string.Join("[", random, queryString, DateTime.Now.ToString(format));
+
+                if (String.IsNullOrEmpty(areas))
+                {
+                    mainString = $"/{controllerName}/{actionName}?q={protector.Protect(values)}";
+                }
+                else
+                {
+                    mainString = $"/{areas}/{controllerName}/{actionName}?q={protector.Protect(values)}";
+                }
+
+            }
+
+            tag.Attributes["href"] = mainString;
+            tag.InnerHtml.Append(string.IsNullOrEmpty(text) ? "____" : text);
+            output.Content.SetHtmlContent(tag);
+        }</code></pre>
+
+
+
+<p>After creating <strong>TagHelper </strong>now let’s register it in <strong>_ViewImports.cshtml</strong> file such that we can access it in on Views in the entire application.</p>
+
+
+
+<pre class="wp-block-code"><code>@using WebQuery
+@using WebQuery.Models
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+@addTagHelper *, WebQuery
+</code></pre>
+
+
+
+<p>Now we have encrypted and registered TagHelper next we are going to decrypt it using Action Filter attribute.</p>
+
+
+
+<p><strong><u>Creating Action Filter Attribute for Decrypting Query String values</u></strong></p>
+
+
+
+<p>For creating Action Filter Attribute, we are going to make a folder first, and inside that folder, we are going to add Class with name <strong>DecryptQueryStringParameterAttribute </strong>which will inherit ActionFilterAttribute. </p>
+
+
+
+<p>In this method we are going decrypt values of the query string and set it to Action method Arguments also we are going to check the timestamp of query string if it is greater than 30 min then we are going redirect it to an error page. This will allow you to protect against storing URLs.</p>
+
+
+
+<figure class="wp-block-image size-large"><img loading="lazy" width="325" height="273" src="./Encrypting and Decrypting Query String in ASP.NET Core - Tutexchange_files/image-5.png" alt="" class="wp-image-1368 jetpack-lazy-image" data-recalc-dims="1" data-lazy-srcset="https://i2.wp.com/tutexchange.com/wp-content/uploads/2020/12/image-5.png?w=325&amp;ssl=1 325w, https://i2.wp.com/tutexchange.com/wp-content/uploads/2020/12/image-5.png?resize=300%2C252&amp;ssl=1 300w" data-lazy-sizes="(max-width: 325px) 100vw, 325px" data-lazy-src="https://i2.wp.com/tutexchange.com/wp-content/uploads/2020/12/image-5.png?resize=325%2C273&amp;is-pending-load=1#038;ssl=1" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"><noscript><img loading="lazy" width="325" height="273" src="https://i2.wp.com/tutexchange.com/wp-content/uploads/2020/12/image-5.png?resize=325%2C273&#038;ssl=1" alt="" class="wp-image-1368" srcset="https://i2.wp.com/tutexchange.com/wp-content/uploads/2020/12/image-5.png?w=325&amp;ssl=1 325w, https://i2.wp.com/tutexchange.com/wp-content/uploads/2020/12/image-5.png?resize=300%2C252&amp;ssl=1 300w" sizes="(max-width: 325px) 100vw, 325px" data-recalc-dims="1" /></noscript></figure>
+
+
+
+<pre class="wp-block-code"><code>using System;
+using System.Collections.Generic;
+using System.Globalization;
+using System.Linq;
+using Microsoft.AspNetCore.DataProtection;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Filters;
+using Microsoft.AspNetCore.Routing;
+
+namespace WebQuery.Filters
+{
+    public class DecryptQueryStringParameterAttribute : ActionFilterAttribute
+    {
+        public override void OnActionExecuting(ActionExecutingContext filterContext)
+        {
+            var dataProtectionProvider = DataProtectionProvider.Create("WebQuery");
+            var protector = dataProtectionProvider.CreateProtector("WebQuery.QueryStrings");
+
+            Dictionary&lt;string, object&gt; decryptedParameters = new Dictionary&lt;string, object&gt;();
+            if (filterContext.HttpContext.Request.Query["q"].ToString() != null)
+            {
+                string decrptedString = protector.Unprotect(filterContext.HttpContext.Request.Query["q"].ToString());
+                string[] getRandom = decrptedString.Split('[');
+
+                var format = new CultureInfo("en-GB");
+                var dateCheck = Convert.ToDateTime(getRandom[2], format);
+
+                TimeSpan diff = Convert.ToDateTime(DateTime.Now, format) - dateCheck;
+
+                /* For Development it is been commented */
+                if (diff.Minutes &gt; 30)
+                {
+                    filterContext.Result = new RedirectToRouteResult(new RouteValueDictionary(new { action = "Error", controller = "Error" }));
+                }
+
+                string[] paramsArrs = getRandom[1].Split(',');
+
+                for (int i = 0; i &lt; paramsArrs.Length; i++)
+                {
+                    string[] paramArr = paramsArrs[i].Split('=');
+                    decryptedParameters.Add(paramArr[0], Convert.ToString(paramArr[1]));
+                }
+            }
+            for (int i = 0; i &lt; decryptedParameters.Count; i++)
+            {
+                filterContext.ActionArguments[decryptedParameters.Keys.ElementAt(i)] = decryptedParameters.Values.ElementAt(i);
+            }
+
+        }
+    }
+}</code></pre>
+
+
+
+<p>Now we have created attribute which will decrypt values and show in action method parameters.</p>
+
+
+
+<p><strong><u>Using TagHelper to Encrypt values and Decrypt values using Attribute</u></strong></p>
+
+
+
+<p>On Index View of Home Controller, we are going to create new Link using TagHelper which we have created.<br>This Custom Anchor TagHelper will Create Encrypted Link.</p>
+
+
+
+<pre class="wp-block-code"><code>@{
+    ViewData["Title"] = "Home Page";
+}
+
+&lt;div class="text-left"&gt;
+    &lt;h1 class="display-4"&gt;Welcome&lt;/h1&gt;
+    &lt;br /&gt;
+    &lt;a s-text="Link 1" s-actionName="Profile" s-controllerName="Home" s-rK1="profileId" s-rV1="1" s-rK2="applicationId" s-rV2="MAX-1"&gt;&lt;/a&gt;
+    &lt;br /&gt;
+    &lt;a s-text="Link 2" s-actionName="Profile" s-controllerName="Home" s-rK1="profileId" s-rV1="2" s-rK2="applicationId" s-rV2="MAX-2"&gt;&lt;/a&gt;
+    &lt;br /&gt;
+    &lt;a s-text="Link 3" s-actionName="Profile" s-controllerName="Home" s-rK1="profileId" s-rV1="3" s-rK2="applicationId" s-rV2="MAX-3"&gt;&lt;/a&gt;
+    &lt;br /&gt;
+    &lt;a s-text="Link 4" s-actionName="Profile" s-controllerName="Home" s-rK1="profileId" s-rV1="4" s-rK2="applicationId" s-rV2="MAX-4"&gt;&lt;/a&gt;
+    &lt;br /&gt;
+    &lt;a s-text="Link 5" s-actionName="Profile" s-controllerName="Home" s-rK1="profileId" s-rV1="5" s-rK2="applicationId" s-rV2="MAX-5"&gt;&lt;/a&gt;
+    &lt;br /&gt;
+&lt;/div&gt;
+</code></pre>
+
+
+
+<figure class="wp-block-image size-large is-resized"><img loading="lazy" src="./Encrypting and Decrypting Query String in ASP.NET Core - Tutexchange_files/image-6.png" alt="" class="wp-image-1369 jetpack-lazy-image" width="718" height="513" data-recalc-dims="1" data-lazy-srcset="https://i0.wp.com/tutexchange.com/wp-content/uploads/2020/12/image-6.png?w=718&amp;ssl=1 718w, https://i0.wp.com/tutexchange.com/wp-content/uploads/2020/12/image-6.png?resize=300%2C214&amp;ssl=1 300w" data-lazy-sizes="(max-width: 718px) 100vw, 718px" data-lazy-src="https://i0.wp.com/tutexchange.com/wp-content/uploads/2020/12/image-6.png?resize=718%2C513&amp;is-pending-load=1#038;ssl=1" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"><noscript><img loading="lazy" src="https://i0.wp.com/tutexchange.com/wp-content/uploads/2020/12/image-6.png?resize=718%2C513&#038;ssl=1" alt="" class="wp-image-1369" width="718" height="513" srcset="https://i0.wp.com/tutexchange.com/wp-content/uploads/2020/12/image-6.png?w=718&amp;ssl=1 718w, https://i0.wp.com/tutexchange.com/wp-content/uploads/2020/12/image-6.png?resize=300%2C214&amp;ssl=1 300w" sizes="(max-width: 718px) 100vw, 718px" data-recalc-dims="1" /></noscript></figure>
+
+
+
+<p>On click on this link, it is going to call Profile Action Method of Home Controller to decrypt values we are going to apply <strong>[DecryptQueryStringParameter]</strong> Attribute on Profile Action Method.</p>
+
+
+
+<pre class="wp-block-code"><code>[DecryptQueryStringParameter]
+public IActionResult Profile(string profileId, string applicationId)
+{
+    return View();
+}
+</code></pre>
+
+
+
+<figure class="wp-block-image size-large is-resized"><img loading="lazy" src="./Encrypting and Decrypting Query String in ASP.NET Core - Tutexchange_files/image-7.png" alt="" class="wp-image-1370 jetpack-lazy-image" width="718" height="164" data-recalc-dims="1" data-lazy-srcset="https://i1.wp.com/tutexchange.com/wp-content/uploads/2020/12/image-7.png?w=718&amp;ssl=1 718w, https://i1.wp.com/tutexchange.com/wp-content/uploads/2020/12/image-7.png?resize=300%2C69&amp;ssl=1 300w" data-lazy-sizes="(max-width: 718px) 100vw, 718px" data-lazy-src="https://i1.wp.com/tutexchange.com/wp-content/uploads/2020/12/image-7.png?resize=718%2C164&amp;is-pending-load=1#038;ssl=1" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"><noscript><img loading="lazy" src="https://i1.wp.com/tutexchange.com/wp-content/uploads/2020/12/image-7.png?resize=718%2C164&#038;ssl=1" alt="" class="wp-image-1370" width="718" height="164" srcset="https://i1.wp.com/tutexchange.com/wp-content/uploads/2020/12/image-7.png?w=718&amp;ssl=1 718w, https://i1.wp.com/tutexchange.com/wp-content/uploads/2020/12/image-7.png?resize=300%2C69&amp;ssl=1 300w" sizes="(max-width: 718px) 100vw, 718px" data-recalc-dims="1" /></noscript></figure>
+
+
+
+<p><strong><u>Custom Helper for Generating Encrypting URL in application</u></strong></p>
+
+
+
+<p><strong>CustomQueryStringHelper </strong>is for generating URL for internal redirection because using Custom tag helper we can generating encrypted Query String on View only. In some scenario, if we want to redirect URL with Secure string, then we can use CustomQueryStringHelper.</p>
+
+
+
+<p>The logic for generation helper is same as Custom tag helper.&nbsp; CustomQueryStringHelper is a static class with EncryptString method. Which takes areas, actionName, controllerName and route Values as input for generating string and it will return string as Output.</p>
+
+
+
+<p>This string can be passed to <strong>LocalRedirectResult </strong>to redirect.</p>
+
+
+
+<figure class="wp-block-image size-large"><img loading="lazy" width="309" height="292" src="./Encrypting and Decrypting Query String in ASP.NET Core - Tutexchange_files/image-8.png" alt="" class="wp-image-1371 jetpack-lazy-image" data-recalc-dims="1" data-lazy-srcset="https://i1.wp.com/tutexchange.com/wp-content/uploads/2020/12/image-8.png?w=309&amp;ssl=1 309w, https://i1.wp.com/tutexchange.com/wp-content/uploads/2020/12/image-8.png?resize=300%2C283&amp;ssl=1 300w" data-lazy-sizes="(max-width: 309px) 100vw, 309px" data-lazy-src="https://i1.wp.com/tutexchange.com/wp-content/uploads/2020/12/image-8.png?resize=309%2C292&amp;is-pending-load=1#038;ssl=1" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"><noscript><img loading="lazy" width="309" height="292" src="https://i1.wp.com/tutexchange.com/wp-content/uploads/2020/12/image-8.png?resize=309%2C292&#038;ssl=1" alt="" class="wp-image-1371" srcset="https://i1.wp.com/tutexchange.com/wp-content/uploads/2020/12/image-8.png?w=309&amp;ssl=1 309w, https://i1.wp.com/tutexchange.com/wp-content/uploads/2020/12/image-8.png?resize=300%2C283&amp;ssl=1 300w" sizes="(max-width: 309px) 100vw, 309px" data-recalc-dims="1" /></noscript></figure>
+
+
+
+<pre class="wp-block-code"><code>using Microsoft.AspNetCore.DataProtection;
+using Microsoft.AspNetCore.Routing;
+using System;
+using System.Collections.Generic;
+using System.Globalization;
+using System.Linq;
+
+namespace WebQuery.Helpers
+{
+    public static class CustomQueryStringHelper
+    {
+        public static string EncryptString(string areas, string actionName, string controllerName, object routeValues)
+        {
+            var dataProtectionProvider = DataProtectionProvider.Create("WebQuery");
+            var protector = dataProtectionProvider.CreateProtector("WebQuery.QueryStrings");
+
+            string mainString;
+            string queryString = string.Empty;
+            var rvd = new RouteValueDictionary(routeValues);
+            IList&lt;string&gt; strings = new List&lt;string&gt;();
+
+            if (routeValues != null)
+            {
+                for (int i = 0; i &lt; rvd.Keys.Count; i++)
+                {
+                    strings.Add(rvd.Keys.ElementAt(i) + "=" + rvd.Values.ElementAt(i));
+                }
+                queryString += string.Join(",", strings);
+
+                var format = new CultureInfo("en-GB");
+                var random = Guid.NewGuid().ToString("N").Substring(0, 10).ToUpper();
+                var values = string.Join("[", random, queryString, DateTime.Now.ToString(format));
+
+                if (String.IsNullOrEmpty(areas))
+                {
+                    mainString = $"/{controllerName}/{actionName}?q={protector.Protect(values)}";
+                }
+                else
+                {
+                    mainString = $"/{areas}/{controllerName}/{actionName}?q={protector.Protect(values)}";
+                }
+
+            }
+            else
+            {
+                if (String.IsNullOrEmpty(areas))
+                {
+                    mainString = $"/{controllerName}/{actionName}";
+                }
+                else
+                {
+                    mainString = $"/{areas}/{controllerName}/{actionName}";
+                }
+            }
+
+            return mainString;
+        }
+    }
+}
+</code></pre>
+
+
+
+<p><strong><u>Generating Encrypted URL and Redirecting</u></strong></p>
+
+
+
+<pre class="wp-block-code"><code>public IActionResult Index()
+{
+    var dataString = CustomQueryStringHelper.
+        EncryptString("", "Profile", "Home", new { profileId = "1", applicationId = "MAX-1" });
+    return LocalRedirect(dataString);
+}
+</code></pre>
+
+
+
+<p>In this Article we have learnt how to Encrypting and Decrypting Query String in ASP.NET Core in simple steps. Hope You Like my Article Please Comment and Share if Possible.</p>
+
+
+
+<p></p>
+<div class="sharedaddy sd-sharing-enabled"><div class="robots-nocontent sd-block sd-social sd-social-official sd-sharing"><h3 class="sd-title">Share this:</h3><div class="sd-content"><ul><li class="share-twitter"><iframe id="twitter-widget-0" scrolling="no" frameborder="0" allowtransparency="true" allowfullscreen="true" class="twitter-share-button twitter-share-button-rendered twitter-tweet-button" style="position: static; visibility: visible; width: 61px; height: 20px;" title="Twitter Tweet Button" src="./Encrypting and Decrypting Query String in ASP.NET Core - Tutexchange_files/tweet_button.96fd96193cc66c3e11d4c5e4c7c7ec97.en.html" data-url="https://tutexchange.com/encrypting-and-decrypting-query-string-in-asp-net-core/"></iframe></li><li class="share-facebook"><div class="fb-share-button fb_iframe_widget" data-href="https://tutexchange.com/encrypting-and-decrypting-query-string-in-asp-net-core/" data-layout="button_count" fb-xfbml-state="rendered" fb-iframe-plugin-query="app_id=249643311490&amp;container_width=0&amp;href=https%3A%2F%2Ftutexchange.com%2Fencrypting-and-decrypting-query-string-in-asp-net-core%2F&amp;layout=button_count&amp;locale=en_US&amp;sdk=joey"><span style="vertical-align: bottom; width: 89px; height: 20px;"><iframe name="f144fea39cf8964" width="1000px" height="1000px" data-testid="fb:share_button Facebook Social Plugin" title="fb:share_button Facebook Social Plugin" frameborder="0" allowtransparency="true" allowfullscreen="true" scrolling="no" allow="encrypted-media" src="./Encrypting and Decrypting Query String in ASP.NET Core - Tutexchange_files/share_button.html" style="border: none; visibility: visible; width: 89px; height: 20px;" class=""></iframe></span></div></li><li class="share-linkedin"><div class="linkedin_button"><span class="IN-widget" data-lnkd-debug="&lt;script type=&quot;in/share+init&quot; data-url=&quot;https://tutexchange.com/encrypting-and-decrypting-query-string-in-asp-net-core/&quot; data-counter=&quot;right&quot;&gt;&lt;/script&gt;" style="display: inline-block; line-height: 1; vertical-align: bottom; padding: 0px; margin: 0px; text-indent: 0px; text-align: center;"><span style="padding: 0px !important; margin: 0px !important; text-indent: 0px !important; display: inline-block !important; vertical-align: bottom !important; font-size: 1px !important;"><button class="IN-6d5494f8-69f0-4a9d-8c6b-3e3c3eb1b33b-1G9ISYhSF8XoOmdcl0yKDu"><xdoor-icon aria-hidden="true"><svg viewBox="0 0 24 24" width="24px" height="24px" x="0" y="0" preserveAspectRatio="xMinYMin meet">
+      <g style="fill: currentColor">
+        <rect x="-0.003" style="fill:none;" width="24" height="24"></rect>
+        <path style="" d="M20,2h-16c-1.1,0-2,0.9-2,2v16c0,1.1,0.9,2,2,2h16c1.1,0,2-0.9,2-2V4C22,2.9,21.1,2,20,2zM8,19h-3v-9h3V19zM6.5,8.8C5.5,8.8,4.7,8,4.7,7s0.8-1.8,1.8-1.8S8.3,6,8.3,7S7.5,8.8,6.5,8.8zM19,19h-3v-4c0-1.4-0.6-2-1.5-2c-1.1,0-1.5,0.8-1.5,2.2V19h-3v-9h2.9v1.1c0.5-0.7,1.4-1.3,2.6-1.3c2.3,0,3.5,1.1,3.5,3.7V19z"></path>
+      </g>
+    </svg></xdoor-icon>Share</button></span></span></div></li><li class="share-print"><a rel="nofollow noopener noreferrer" data-shared="" class="share-print sd-button" href="https://tutexchange.com/encrypting-and-decrypting-query-string-in-asp-net-core/#print" target="_blank" title="Click to print"><span>Print</span></a></li><li class="share-end"></li></ul></div></div></div><div class="sharedaddy sd-block sd-like jetpack-likes-widget-wrapper jetpack-likes-widget-unloaded" id="like-post-wrapper-170780971-1360-6018578851c3d" data-src="https://widgets.wp.com/likes/#blog_id=170780971&amp;post_id=1360&amp;origin=tutexchange.com&amp;obj_id=170780971-1360-6018578851c3d" data-name="like-post-frame-170780971-1360-6018578851c3d"><h3 class="sd-title">Like this:</h3><div class="likes-widget-placeholder post-likes-widget-placeholder" style="height: 55px;"><span class="button"><span>Like</span></span> <span class="loading">Loading...</span></div><span class="sd-text-color"></span><a class="sd-link-color"></a></div>
+<div id="jp-relatedposts" class="jp-relatedposts" style="display: block;">
+	<h3 class="jp-relatedposts-headline"><em>Related</em></h3>
+<div class="jp-relatedposts-items jp-relatedposts-items-visual jp-relatedposts-grid "><div class="jp-relatedposts-post jp-relatedposts-post0 jp-relatedposts-post-thumbs" data-post-id="108" data-post-format="false"><a class="jp-relatedposts-post-a" href="https://tutexchange.com/using-query-strings-in-asp-net-core/" title="Using Query Strings in ASP.NET CORE" data-origin="1360" data-position="0"><img class="jp-relatedposts-post-img" src="./Encrypting and Decrypting Query String in ASP.NET Core - Tutexchange_files/image-18.png" width="350" alt=""></a><h4 class="jp-relatedposts-post-title"><a class="jp-relatedposts-post-a" href="https://tutexchange.com/using-query-strings-in-asp-net-core/" title="Using Query Strings in ASP.NET CORE" data-origin="1360" data-position="0">Using Query Strings in ASP.NET CORE</a></h4><p class="jp-relatedposts-post-excerpt">Using Query Strings in ASP.NET CORE If we want to pass data from one page to another page then we use query string all browser support query string.Let’s Create a Query string and read values of it.For showing demo I have added a New Controller with name Demo7 and 2…</p><time class="jp-relatedposts-post-date" datetime="December 29, 2019" style="display: block;">December 29, 2019</time></div><div class="jp-relatedposts-post jp-relatedposts-post1 jp-relatedposts-post-thumbs" data-post-id="124" data-post-format="false"><a class="jp-relatedposts-post-a" href="https://tutexchange.com/new-tag-helpers-in-asp-net-core/" title="New Tag Helpers in ASP.Net Core" data-origin="1360" data-position="1"><img class="jp-relatedposts-post-img" src="./Encrypting and Decrypting Query String in ASP.NET Core - Tutexchange_files/image(1).png" width="350" alt=""></a><h4 class="jp-relatedposts-post-title"><a class="jp-relatedposts-post-a" href="https://tutexchange.com/new-tag-helpers-in-asp-net-core/" title="New Tag Helpers in ASP.Net Core" data-origin="1360" data-position="1">New Tag Helpers in ASP.Net Core</a></h4><p class="jp-relatedposts-post-excerpt">New Tag Helpers in ASP.Net Core Any web application we develop the end output is always an HTML if we see back to OLD ASP.NET webforms stack then we use to have server controls which help us to render HTML as output then Microsoft releases new ASP.NET MVC framework 2009…</p><time class="jp-relatedposts-post-date" datetime="January 3, 2020" style="display: block;">January 3, 2020</time></div><div class="jp-relatedposts-post jp-relatedposts-post2 jp-relatedposts-post-thumbs" data-post-id="316" data-post-format="false"><a class="jp-relatedposts-post-a" href="https://tutexchange.com/how-to-set-up-asp-net-core-identity/" title="How to set up ASP.NET Core Identity" data-origin="1360" data-position="2"><img class="jp-relatedposts-post-img" src="./Encrypting and Decrypting Query String in ASP.NET Core - Tutexchange_files/image-116.png" width="350" alt=""></a><h4 class="jp-relatedposts-post-title"><a class="jp-relatedposts-post-a" href="https://tutexchange.com/how-to-set-up-asp-net-core-identity/" title="How to set up ASP.NET Core Identity" data-origin="1360" data-position="2">How to set up ASP.NET Core Identity</a></h4><p class="jp-relatedposts-post-excerpt">How to set up ASP.NET Core Identity ASP.NET Core Identity is read to use simple membership system which evolved over the years, which include features such as Registering User, login, forgot password, change password, assign roles, Role-based Authorization, Policy-based Authorization, Claims Based Authorization. It also supported external login providers include…</p><time class="jp-relatedposts-post-date" datetime="January 15, 2020" style="display: block;">January 15, 2020</time></div></div></div>																	</div>
+														</div>
+														<div class="post-footer">
+								<div class="social-icons ed-social-share-icons">
+									<p class="share-title">Share:</p>
+									
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		<a href="http://www.facebook.com/sharer.php?u=https://tutexchange.com/encrypting-and-decrypting-query-string-in-asp-net-core/&amp;t=Encrypting%20and%20Decrypting%20Query%20String%20in%20ASP.NET%20Core" class="social-share-link" title="Share &quot;Encrypting and Decrypting Query String in ASP.NET Core&quot; via Facebook" data-network-name="facebook" data-share-title="Encrypting and Decrypting Query String in ASP.NET Core" data-share-url="https://tutexchange.com/encrypting-and-decrypting-query-string-in-asp-net-core/">
+				<span class="et-extra-icon et-extra-icon-facebook et-extra-icon-background-hover"></span>
+			</a><a href="http://twitter.com/intent/tweet?text=Encrypting%20and%20Decrypting%20Query%20String%20in%20ASP.NET%20Core%20https://tutexchange.com/encrypting-and-decrypting-query-string-in-asp-net-core/" class="social-share-link" title="Share &quot;Encrypting and Decrypting Query String in ASP.NET Core&quot; via Twitter" data-network-name="twitter" data-share-title="Encrypting and Decrypting Query String in ASP.NET Core" data-share-url="https://tutexchange.com/encrypting-and-decrypting-query-string-in-asp-net-core/">
+				<span class="et-extra-icon et-extra-icon-twitter et-extra-icon-background-hover"></span>
+			</a><a href="https://plus.google.com/share?url=https://tutexchange.com/encrypting-and-decrypting-query-string-in-asp-net-core/&amp;t=Encrypting%20and%20Decrypting%20Query%20String%20in%20ASP.NET%20Core" class="social-share-link" title="Share &quot;Encrypting and Decrypting Query String in ASP.NET Core&quot; via Google +" data-network-name="googleplus" data-share-title="Encrypting and Decrypting Query String in ASP.NET Core" data-share-url="https://tutexchange.com/encrypting-and-decrypting-query-string-in-asp-net-core/">
+				<span class="et-extra-icon et-extra-icon-googleplus et-extra-icon-background-hover"></span>
+			</a><a href="https://www.tumblr.com/share?v=3&amp;u=https://tutexchange.com/encrypting-and-decrypting-query-string-in-asp-net-core/&amp;t=Encrypting%20and%20Decrypting%20Query%20String%20in%20ASP.NET%20Core" class="social-share-link" title="Share &quot;Encrypting and Decrypting Query String in ASP.NET Core&quot; via Tumblr" data-network-name="tumblr" data-share-title="Encrypting and Decrypting Query String in ASP.NET Core" data-share-url="https://tutexchange.com/encrypting-and-decrypting-query-string-in-asp-net-core/">
+				<span class="et-extra-icon et-extra-icon-tumblr et-extra-icon-background-hover"></span>
+			</a><a href="http://www.pinterest.com/pin/create/button/?url=https://tutexchange.com/encrypting-and-decrypting-query-string-in-asp-net-core/&amp;description=Encrypting%20and%20Decrypting%20Query%20String%20in%20ASP.NET%20Core&amp;media=" class="social-share-link" title="Share &quot;Encrypting and Decrypting Query String in ASP.NET Core&quot; via Pinterest" data-network-name="pinterest" data-share-title="Encrypting and Decrypting Query String in ASP.NET Core" data-share-url="https://tutexchange.com/encrypting-and-decrypting-query-string-in-asp-net-core/">
+				<span class="et-extra-icon et-extra-icon-pinterest et-extra-icon-background-hover"></span>
+			</a><a href="http://www.linkedin.com/shareArticle?mini=true&amp;url=https://tutexchange.com/encrypting-and-decrypting-query-string-in-asp-net-core/&amp;title=Encrypting%20and%20Decrypting%20Query%20String%20in%20ASP.NET%20Core" class="social-share-link" title="Share &quot;Encrypting and Decrypting Query String in ASP.NET Core&quot; via LinkedIn" data-network-name="linkedin" data-share-title="Encrypting and Decrypting Query String in ASP.NET Core" data-share-url="https://tutexchange.com/encrypting-and-decrypting-query-string-in-asp-net-core/">
+				<span class="et-extra-icon et-extra-icon-linkedin et-extra-icon-background-hover"></span>
+			</a><a href="https://bufferapp.com/add?url=https://tutexchange.com/encrypting-and-decrypting-query-string-in-asp-net-core/&amp;title=Encrypting%20and%20Decrypting%20Query%20String%20in%20ASP.NET%20Core" class="social-share-link" title="Share &quot;Encrypting and Decrypting Query String in ASP.NET Core&quot; via Buffer" data-network-name="buffer" data-share-title="Encrypting and Decrypting Query String in ASP.NET Core" data-share-url="https://tutexchange.com/encrypting-and-decrypting-query-string-in-asp-net-core/">
+				<span class="et-extra-icon et-extra-icon-buffer et-extra-icon-background-hover"></span>
+			</a><a href="http://www.stumbleupon.com/badge?url=https://tutexchange.com/encrypting-and-decrypting-query-string-in-asp-net-core/&amp;title=Encrypting%20and%20Decrypting%20Query%20String%20in%20ASP.NET%20Core" class="social-share-link" title="Share &quot;Encrypting and Decrypting Query String in ASP.NET Core&quot; via Stumbleupon" data-network-name="stumbleupon" data-share-title="Encrypting and Decrypting Query String in ASP.NET Core" data-share-url="https://tutexchange.com/encrypting-and-decrypting-query-string-in-asp-net-core/">
+				<span class="et-extra-icon et-extra-icon-stumbleupon et-extra-icon-background-hover"></span>
+			</a><a href="https://tutexchange.com/encrypting-and-decrypting-query-string-in-asp-net-core/#" class="social-share-link" title="Share &quot;Encrypting and Decrypting Query String in ASP.NET Core&quot; via Email" data-network-name="basic_email" data-share-title="Encrypting and Decrypting Query String in ASP.NET Core" data-share-url="https://tutexchange.com/encrypting-and-decrypting-query-string-in-asp-net-core/">
+				<span class="et-extra-icon et-extra-icon-basic_email et-extra-icon-background-hover"></span>
+			</a><a href="https://tutexchange.com/encrypting-and-decrypting-query-string-in-asp-net-core/#" class="social-share-link" title="Share &quot;Encrypting and Decrypting Query String in ASP.NET Core&quot; via Print" data-network-name="basic_print" data-share-title="Encrypting and Decrypting Query String in ASP.NET Core" data-share-url="https://tutexchange.com/encrypting-and-decrypting-query-string-in-asp-net-core/">
+				<span class="et-extra-icon et-extra-icon-basic_print et-extra-icon-background-hover"></span>
+			</a>								</div>
+																<div class="rating-stars">
+									<p id="rate-title" class="rate-title">Rate:</p><div id="rating-stars" style="cursor: pointer;"><img src="./Encrypting and Decrypting Query String in ASP.NET Core - Tutexchange_files/star-full.svg" alt="1" title="bad" class="rating-star rating-star-1 star-off"><img src="./Encrypting and Decrypting Query String in ASP.NET Core - Tutexchange_files/star-full.svg" alt="2" title="poor" class="rating-star rating-star-2 star-off"><img src="./Encrypting and Decrypting Query String in ASP.NET Core - Tutexchange_files/star-full.svg" alt="3" title="regular" class="rating-star rating-star-3 star-off"><img src="./Encrypting and Decrypting Query String in ASP.NET Core - Tutexchange_files/star-full.svg" alt="4" title="good" class="rating-star rating-star-4 star-off"><img src="./Encrypting and Decrypting Query String in ASP.NET Core - Tutexchange_files/star-full.svg" alt="5" title="gorgeous" class="rating-star rating-star-5 star-off"><input type="hidden" name="score"></div><input type="hidden" id="post_id" value="1360">								</div>
+																<style type="text/css" id="rating-stars">
+									.post-footer .rating-stars #rated-stars img.star-on,
+									.post-footer .rating-stars #rating-stars img.star-on {
+										background-color: #7ac8cc;
+									}
+								</style>
+							</div>
+
+																				</article>
+
+						<nav class="post-nav">
+							<div class="nav-links clearfix">
+								<div class="nav-link nav-link-prev">
+									<a href="https://tutexchange.com/frapper-quick-guide-on-user-module/" rel="prev"><span class="button">Previous</span><span class="title">Frapper Quick Guide on User Module</span></a>								</div>
+								<div class="nav-link nav-link-next">
+									<a href="https://tutexchange.com/top-50-most-asked-angular-interview-questions-and-answers/" rel="next"><span class="button">Next</span><span class="title">TOP 50 MOST ASKED Angular Interview Questions and Answers</span></a>								</div>
+							</div>
+						</nav>
+												<div class="et_extra_other_module author-box vcard">
+							<div class="author-box-header">
+								<h3>About The Author</h3>
+							</div>
+							<div class="author-box-content clearfix">
+								<div class="author-box-avatar">
+									<img alt="saineshwarbageri" src="./Encrypting and Decrypting Query String in ASP.NET Core - Tutexchange_files/ebc983b0ea9f55c294f5ea16387e2c77.jpeg" class="avatar avatar-170 photo jetpack-lazy-image" height="170" width="170" loading="lazy" data-lazy-srcset="https://secure.gravatar.com/avatar/ebc983b0ea9f55c294f5ea16387e2c77?s=340&amp;d=mm&amp;r=g 2x" data-lazy-src="https://secure.gravatar.com/avatar/ebc983b0ea9f55c294f5ea16387e2c77?s=170&amp;is-pending-load=1#038;d=mm&amp;r=g" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"><noscript><img alt='saineshwarbageri' src='https://secure.gravatar.com/avatar/ebc983b0ea9f55c294f5ea16387e2c77?s=170&#038;d=mm&#038;r=g' srcset='https://secure.gravatar.com/avatar/ebc983b0ea9f55c294f5ea16387e2c77?s=340&#038;d=mm&#038;r=g 2x' class='avatar avatar-170 photo' height='170' width='170' loading='lazy'/></noscript>								</div>
+								<div class="author-box-description">
+									<h4><a class="author-link url fn" href="https://tutexchange.com/author/saineshwarbageri/" rel="author" title="View all posts by saineshwarbageri">saineshwarbageri</a></h4>
+									<p class="note">I am Microsoft MVP | C# Corner MVP | Code Project MVP | FULL STACK .NET Developer and working on .Net Web Technology (Asp.net, Asp.net Core,.Net Core, C#, Sqlserver, MVC, Windows, Console Application, javascript, jquery, json, ORM Dapper) and also a freelance developer.</p>
+									<ul class="social-icons">
+																			</ul>
+								</div>
+							</div>
+						</div>
+						
+												<div class="et_extra_other_module related-posts">
+							<div class="related-posts-header">
+								<h3>Related Posts</h3>
+							</div>
+							<div class="related-posts-content clearfix">
+																<div class="related-post">
+									<div class="featured-image"><a href="https://tutexchange.com/how-to-customise-asp-net-core-identity/" title="How to Customise ASP.NET Core Identity" class="post-thumbnail">
+				<img src="./Encrypting and Decrypting Query String in ASP.NET Core - Tutexchange_files/post-format-thumb-text.svg" alt="How to Customise ASP.NET Core Identity"><span class="et_pb_extra_overlay"></span>
+			</a></div>
+									<h4 class="title"><a href="https://tutexchange.com/how-to-customise-asp-net-core-identity/">How to Customise ASP.NET Core Identity</a></h4>
+									<p class="date"><span class="updated">January 15, 2020</span></p>
+								</div>
+																<div class="related-post">
+									<div class="featured-image"><a href="https://tutexchange.com/how-to-host-asp-net-core-app-on-linux-with-nginx-webserver/" title="How to Host ASP.NET Core App on Linux with Nginx Webserver" class="post-thumbnail">
+				<img src="./Encrypting and Decrypting Query String in ASP.NET Core - Tutexchange_files/post-format-thumb-text.svg" alt="How to Host ASP.NET Core App on Linux with Nginx Webserver"><span class="et_pb_extra_overlay"></span>
+			</a></div>
+									<h4 class="title"><a href="https://tutexchange.com/how-to-host-asp-net-core-app-on-linux-with-nginx-webserver/">How to Host ASP.NET Core App on Linux with Nginx Webserver</a></h4>
+									<p class="date"><span class="updated">September 24, 2020</span></p>
+								</div>
+																<div class="related-post">
+									<div class="featured-image"><a href="https://tutexchange.com/exception-filter-in-asp-net-core-mvc/" title="Exception Filter in ASP.NET CORE MVC" class="post-thumbnail">
+				<img src="./Encrypting and Decrypting Query String in ASP.NET Core - Tutexchange_files/post-format-thumb-text.svg" alt="Exception Filter in ASP.NET CORE MVC"><span class="et_pb_extra_overlay"></span>
+			</a></div>
+									<h4 class="title"><a href="https://tutexchange.com/exception-filter-in-asp-net-core-mvc/">Exception Filter in ASP.NET CORE MVC</a></h4>
+									<p class="date"><span class="updated">February 5, 2020</span></p>
+								</div>
+																<div class="related-post">
+									<div class="featured-image"><a href="https://tutexchange.com/using-session-in-asp-net-core-3-0/" title="Using Session in ASP.NET CORE 3.0" class="post-thumbnail">
+				<img src="./Encrypting and Decrypting Query String in ASP.NET Core - Tutexchange_files/post-format-thumb-text.svg" alt="Using Session in ASP.NET CORE 3.0"><span class="et_pb_extra_overlay"></span>
+			</a></div>
+									<h4 class="title"><a href="https://tutexchange.com/using-session-in-asp-net-core-3-0/">Using Session in ASP.NET CORE 3.0</a></h4>
+									<p class="date"><span class="updated">December 28, 2019</span></p>
+								</div>
+																							</div>
+						</div>
+										
+							</div><!-- /.et_pb_extra_column.et_pb_extra_column_main -->
+
+			<div class="et_pb_extra_column_sidebar">
+	<div id="media_image-6" class="et_pb_widget widget_media_image"><h4 class="widgettitle">Microsoft MVP</h4><a href="https://mvp.microsoft.com/en-us/PublicProfile/5003160?fullName=Saineshwar%20%20Bageri"><img width="300" height="121" src="./Encrypting and Decrypting Query String in ASP.NET Core - Tutexchange_files/MVP_Logo.png" class="image wp-image-201 attachment-medium size-medium jetpack-lazy-image jetpack-lazy-image--handled" alt="" loading="eager" style="max-width: 100%; height: auto;" srcset="https://i2.wp.com/tutexchange.com/wp-content/uploads/2020/01/MVP_Logo.png?w=751&amp;ssl=1 751w, https://i2.wp.com/tutexchange.com/wp-content/uploads/2020/01/MVP_Logo.png?resize=300%2C121&amp;ssl=1 300w" data-lazy-loaded="1" sizes="(max-width: 300px) 100vw, 300px"></a></div> <!-- end .et_pb_widget --><div id="custom_html-12" class="widget_text et_pb_widget widget_custom_html"><h4 class="widgettitle">SUPPORT ME (India)</h4><div class="textwidget custom-html-widget"><div class="im-checkout btn-82">
+      <a href="https://www.instamojo.com/@SaiPay/lc737a8e535d1453aa8805c51c53588ed/" class="im-checkout-btn btn--default" target="_blank" rel="modal" style="color:#ffffff; background:#1273de; width:180px;">Donate if you Like My Work.</a></div>
+<script src="./Encrypting and Decrypting Query String in ASP.NET Core - Tutexchange_files/button.js.download"></script></div></div> <!-- end .et_pb_widget --><div id="custom_html-6" class="widget_text et_pb_widget widget_custom_html"><h4 class="widgettitle">SUPPORT ME !</h4><div class="textwidget custom-html-widget"><a href="https://www.buymeacoffee.com/f8lkgf5" target="_blank" rel="noopener"><img src="./Encrypting and Decrypting Query String in ASP.NET Core - Tutexchange_files/default-yellow.png" alt="Buy Me A Coffee" style="height: 60px !important;width: 217px !important;" data-recalc-dims="1" class="jetpack-lazy-image jetpack-lazy-image--handled" data-lazy-loaded="1" loading="eager"><noscript><img src="https://i2.wp.com/cdn.buymeacoffee.com/buttons/v2/default-yellow.png?w=1080&#038;ssl=1" alt="Buy Me A Coffee" style="height: 60px !important;width: 217px !important;"  data-recalc-dims="1"></noscript></a></div></div> <!-- end .et_pb_widget --><div id="custom_html-8" class="widget_text et_pb_widget widget_custom_html"><h4 class="widgettitle">Stackoverflow</h4><div class="textwidget custom-html-widget"><a href="https://stackoverflow.com/users/1234855/saineshwar"><img src="./Encrypting and Decrypting Query String in ASP.NET Core - Tutexchange_files/1234855.png" width="208" height="58" alt="profile for Saineshwar at Stack Overflow, Q&amp;A for professional and enthusiast programmers" title="profile for Saineshwar at Stack Overflow, Q&amp;A for professional and enthusiast programmers" data-recalc-dims="1" class="jetpack-lazy-image jetpack-lazy-image--handled" data-lazy-loaded="1" loading="eager"><noscript><img src="https://i2.wp.com/stackoverflow.com/users/flair/1234855.png?resize=208%2C58&#038;ssl=1" width="208" height="58" alt="profile for Saineshwar at Stack Overflow, Q&amp;A for professional and enthusiast programmers" title="profile for Saineshwar at Stack Overflow, Q&amp;A for professional and enthusiast programmers" data-recalc-dims="1"></noscript></a></div></div> <!-- end .et_pb_widget --><div id="custom_html-10" class="widget_text et_pb_widget widget_custom_html"><h4 class="widgettitle">c-sharpcorner</h4><div class="textwidget custom-html-widget"><a href="https://www.c-sharpcorner.com/members/saineshwar-bageri">
+<img src="./Encrypting and Decrypting Query String in ASP.NET Core - Tutexchange_files/flair.png" width="260" height="58" alt="profile for Saineshwar C# Corner - A Social Community of Developers and Programmers" title="profile for Saineshwar at C# Corner - A Social Community of Developers and Programmers" data-recalc-dims="1" class="jetpack-lazy-image jetpack-lazy-image--handled" data-lazy-loaded="1" loading="eager"><noscript><img src="https://i0.wp.com/www.c-sharpcorner.com/members/saineshwar-bageri/flair.png?resize=260%2C58&#038;ssl=1" width="260" height="58" alt="profile for Saineshwar C# Corner - A Social Community of Developers and Programmers" title="profile for Saineshwar at C# Corner - A Social Community of Developers and Programmers" data-recalc-dims="1" /></noscript>
+</a></div></div> <!-- end .et_pb_widget --><div id="custom_html-9" class="widget_text et_pb_widget widget_custom_html"><h4 class="widgettitle">Codeproject</h4><div class="textwidget custom-html-widget"><iframe src="./Encrypting and Decrypting Query String in ASP.NET Core - Tutexchange_files/9485754.html" height="200" width="250" scrolling="no" frameborder="no"></iframe></div></div> <!-- end .et_pb_widget --><div id="top-posts-3" class="et_pb_widget widget_top-posts"><h4 class="widgettitle">Top Posts &amp; Pages</h4><ul>				<li>
+					<a href="https://tutexchange.com/how-to-upload-files-and-save-in-database-in-asp-net-core-mvc/" class="bump-view" data-bump-view="tp">How to Upload Files and Save in Database in ASP.NET Core MVC</a>					</li>
+								<li>
+					<a href="https://tutexchange.com/crud-operation-in-asp-net-core-with-using-dapper-orm/" class="bump-view" data-bump-view="tp">CRUD operation in ASP.NET CORE with Using Dapper ORM</a>					</li>
+								<li>
+					<a href="https://tutexchange.com/uploading-download-and-delete-files-in-azure-blob-storage-using-asp-net-core-3-1/" class="bump-view" data-bump-view="tp">Uploading Download and Delete files in Azure Blob Storage using ASP.NET Core 3.1</a>					</li>
+								<li>
+					<a href="https://tutexchange.com/using-redis-cache-with-asp-net-core-3-1-using-stackexchange-redis-extensions-core-extensions/" class="bump-view" data-bump-view="tp">Using Redis Cache with ASP.NET Core 3.1 using StackExchange.Redis.Extensions.Core Extensions</a>					</li>
+								<li>
+					<a href="https://tutexchange.com/how-to-host-asp-net-core-app-on-ubuntu-with-apache-webserver/" class="bump-view" data-bump-view="tp">How to Host ASP.NET Core App on Ubuntu with Apache Webserver</a>					</li>
+								<li>
+					<a href="https://tutexchange.com/how-to-implement-captcha-in-asp-net-core/" class="bump-view" data-bump-view="tp">How to Implement Captcha in ASP.NET CORE</a>					</li>
+								<li>
+					<a href="https://tutexchange.com/authorization-filter-in-asp-net-core-mvc/" class="bump-view" data-bump-view="tp">Authorization filter in ASP.NET CORE MVC</a>					</li>
+								<li>
+					<a href="https://tutexchange.com/how-to-host-asp-net-core-app-on-linux-with-nginx-webserver/" class="bump-view" data-bump-view="tp">How to Host ASP.NET Core App on Linux with Nginx Webserver</a>					</li>
+								<li>
+					<a href="https://tutexchange.com/using-distributed-redis-cache-with-asp-net-core-3-1/" class="bump-view" data-bump-view="tp">Using Distributed Redis Cache with ASP.NET Core 3.1</a>					</li>
+								<li>
+					<a href="https://tutexchange.com/creating-grid-view-in-asp-net-core-with-custom-searching/" class="bump-view" data-bump-view="tp">Creating Grid View in ASP.NET Core with Custom  searching</a>					</li>
+				</ul></div> <!-- end .et_pb_widget -->
+		<div id="recent-posts-6" class="et_pb_widget widget_recent_entries">
+		<h4 class="widgettitle">Recent POST</h4>
+		<ul>
+											<li>
+					<a href="https://tutexchange.com/learn-asp-net-core-from-project/">LEARN ASP.NET Core From Project</a>
+									</li>
+											<li>
+					<a href="https://tutexchange.com/learn-asp-net-core-web-api-from-project/">Learn asp.net core web API From Project</a>
+									</li>
+											<li>
+					<a href="https://tutexchange.com/top-50-most-asked-angular-interview-questions-and-answers/">TOP 50 MOST ASKED Angular Interview Questions and Answers</a>
+									</li>
+											<li>
+					<a href="https://tutexchange.com/encrypting-and-decrypting-query-string-in-asp-net-core/" aria-current="page">Encrypting and Decrypting Query String in ASP.NET Core</a>
+									</li>
+											<li>
+					<a href="https://tutexchange.com/frapper-quick-guide-on-user-module/">Frapper Quick Guide on User Module</a>
+									</li>
+											<li>
+					<a href="https://tutexchange.com/frapper-quick-guide-on-superadmin-module/">FRAPPER Quick Guide On SuperAdmin Module</a>
+									</li>
+											<li>
+					<a href="https://tutexchange.com/frapper-quick-guide-for-rapid-application-development-in-asp-net-core/">Frapper Quick Guide for Rapid Application Development in ASP.NET Core</a>
+									</li>
+											<li>
+					<a href="https://tutexchange.com/how-to-implement-captcha-in-asp-net-core/">How to Implement Captcha in ASP.NET CORE</a>
+									</li>
+											<li>
+					<a href="https://tutexchange.com/how-to-host-asp-net-core-app-on-ubuntu-with-apache-webserver/">How to Host ASP.NET Core App on Ubuntu with Apache Webserver</a>
+									</li>
+											<li>
+					<a href="https://tutexchange.com/how-to-host-asp-net-core-app-on-linux-with-nginx-webserver/">How to Host ASP.NET Core App on Linux with Nginx Webserver</a>
+									</li>
+					</ul>
+
+		</div> <!-- end .et_pb_widget --></div>
+
+		</div> <!-- #content-area -->
+	</div> <!-- .container -->
+	</div> <!-- #main-content -->
+
+	
+	<footer id="footer" class="footer_columns_3">
+				<div id="footer-bottom">
+			<div class="container">
+
+				<!-- Footer Info -->
+				<p id="footer-info">Designed by <a href="http://www.elegantthemes.com/" title="Premium WordPress Themes">Elegant Themes</a> | Powered by <a href="http://www.wordpress.org/">WordPress</a></p>
+
+				<!-- Footer Navigation -->
+								<div id="footer-nav">
+											<ul class="et-extra-social-icons" style="">
+																																								<li class="et-extra-social-icon facebook">
+								<a href="https://www.facebook.com/Tutexchange/" class="et-extra-icon et-extra-icon-background-none et-extra-icon-facebook"></a>
+							</li>
+																																									<li class="et-extra-social-icon twitter">
+								<a href="https://twitter.com/saihacksoft" class="et-extra-icon et-extra-icon-background-none et-extra-icon-twitter"></a>
+							</li>
+																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																				</ul>
+									</div> <!-- /#et-footer-nav -->
+				
+			</div>
+		</div>
+	</footer>
+	</div> <!-- #page-container -->
+
+			<span title="Back To Top" id="back_to_top" class="visible"></span>
+	
+		<div style="display:none">
+	<div class="grofile-hash-map-ebc983b0ea9f55c294f5ea16387e2c77">
+	</div>
+	</div>
+
+	<script type="text/javascript">
+		window.WPCOM_sharing_counts = {"https:\/\/tutexchange.com\/encrypting-and-decrypting-query-string-in-asp-net-core\/":1360};
+	</script>
+							<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+			<div id="fb-root" class=" fb_reset"><div style="position: absolute; top: -10000px; width: 0px; height: 0px;"><div></div></div></div>
+			<script>(function(d, s, id) { var js, fjs = d.getElementsByTagName(s)[0]; if (d.getElementById(id)) return; js = d.createElement(s); js.id = id; js.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&appId=249643311490&version=v2.3'; fjs.parentNode.insertBefore(js, fjs); }(document, 'script', 'facebook-jssdk'));</script>
+			<script>
+			document.body.addEventListener( 'post-load', function() {
+				if ( 'undefined' !== typeof FB ) {
+					FB.XFBML.parse();
+				}
+			} );
+			</script>
+			<script type="text/javascript">
+			jQuery( document ).ready( function() {
+				jQuery.getScript( 'https://platform.linkedin.com/in.js?async=true', function success() {
+					IN.init();
+				});
+			});
+			jQuery( document.body ).on( 'post-load', function() {
+				if ( typeof IN != 'undefined' )
+					IN.parse();
+			});
+			</script><script type="text/javascript" src="./Encrypting and Decrypting Query String in ASP.NET Core - Tutexchange_files/photon.min.js.download" id="jetpack-photon-js"></script>
+<script type="text/javascript" src="./Encrypting and Decrypting Query String in ASP.NET Core - Tutexchange_files/masonry.min.js.download" id="masonry-js"></script>
+<script type="text/javascript" id="extra-scripts-js-extra">
+/* <![CDATA[ */
+var EXTRA = {"images_uri":"https:\/\/tutexchange.com\/wp-content\/themes\/Extra\/images\/","ajaxurl":"https:\/\/tutexchange.com\/wp-admin\/admin-ajax.php","your_rating":"Your Rating:","item_in_cart_count":"%d Item in Cart","items_in_cart_count":"%d Items in Cart","item_count":"%d Item","items_count":"%d Items","rating_nonce":"f1ad3c79e0","timeline_nonce":"4582e60170","blog_feed_nonce":"b686b97f55","error":"There was a problem, please try again.","contact_error_name_required":"Name field cannot be empty.","contact_error_email_required":"Email field cannot be empty.","contact_error_email_invalid":"Please enter a valid email address.","is_ab_testing_active":"","is_cache_plugin_active":"yes"};
+var et_shortcodes_strings = {"previous":"Previous","next":"Next"};
+var et_pb_custom = {"ajaxurl":"https:\/\/tutexchange.com\/wp-admin\/admin-ajax.php","images_uri":"https:\/\/tutexchange.com\/wp-content\/themes\/Extra\/images","builder_images_uri":"https:\/\/tutexchange.com\/wp-content\/themes\/Extra\/includes\/builder\/images","et_frontend_nonce":"6582e04c46","subscription_failed":"Please, check the fields below to make sure you entered the correct information.","et_ab_log_nonce":"69276e2c7d","fill_message":"Please, fill in the following fields:","contact_error_message":"Please, fix the following errors:","invalid":"Invalid email","captcha":"Captcha","prev":"Prev","previous":"Previous","next":"Next","wrong_captcha":"You entered the wrong number in captcha.","wrong_checkbox":"Checkbox","ignore_waypoints":"no","is_divi_theme_used":"","widget_search_selector":".widget_search","ab_tests":[],"is_ab_testing_active":"","page_id":"1360","unique_test_id":"","ab_bounce_rate":"5","is_cache_plugin_active":"yes","is_shortcode_tracking":"","tinymce_uri":""}; var et_builder_utils_params = {"condition":{"diviTheme":false,"extraTheme":true},"scrollLocations":["app","top"],"builderScrollLocations":{"desktop":"app","tablet":"app","phone":"app"},"onloadScrollLocation":"app","builderType":"fe"}; var et_frontend_scripts = {"builderCssContainerPrefix":"#et-boc","builderCssLayoutPrefix":"#et-boc .et-l"};
+var et_pb_box_shadow_elements = [];
+var et_pb_motion_elements = {"desktop":[],"tablet":[],"phone":[]};
+var et_pb_sticky_elements = [];
+/* ]]> */
+</script>
+<script type="text/javascript" src="./Encrypting and Decrypting Query String in ASP.NET Core - Tutexchange_files/scripts.unified.js.download" id="extra-scripts-js"></script>
+<script type="text/javascript" src="./Encrypting and Decrypting Query String in ASP.NET Core - Tutexchange_files/intersectionobserver-polyfill.min.js.download" id="jetpack-lazy-images-polyfill-intersectionobserver-js"></script>
+<script type="text/javascript" id="jetpack-lazy-images-js-extra">
+/* <![CDATA[ */
+var jetpackLazyImagesL10n = {"loading_warning":"Images are still loading. Please cancel your print and try again."};
+/* ]]> */
+</script>
+<script type="text/javascript" src="./Encrypting and Decrypting Query String in ASP.NET Core - Tutexchange_files/lazy-images.min.js.download" id="jetpack-lazy-images-js"></script>
+<script type="text/javascript" src="./Encrypting and Decrypting Query String in ASP.NET Core - Tutexchange_files/common.js.download" id="et-core-common-js"></script>
+<script type="text/javascript" src="./Encrypting and Decrypting Query String in ASP.NET Core - Tutexchange_files/enlighterjs.min.js.download" id="enlighterjs-js"></script>
+<script type="text/javascript" id="enlighterjs-js-after">
+!function(e,n){if("undefined"!=typeof EnlighterJS){var o={"selectors":{"block":"pre.EnlighterJSRAW","inline":"code.EnlighterJSRAW"},"options":{"indent":4,"ampersandCleanup":true,"linehover":true,"rawcodeDbclick":false,"textOverflow":"break","linenumbers":true,"theme":"enlighter","language":"generic","retainCssClasses":false,"collapse":false,"toolbarOuter":"","toolbarTop":"{BTN_RAW}{BTN_COPY}{BTN_WINDOW}{BTN_WEBSITE}","toolbarBottom":""}};(e.EnlighterJSINIT=function(){EnlighterJS.init(o.selectors.block,o.selectors.inline,o.options)})()}else{(n&&(n.error||n.log)||function(){})("Error: EnlighterJS resources not loaded yet!")}}(window,console);
+</script>
+<script type="text/javascript" src="./Encrypting and Decrypting Query String in ASP.NET Core - Tutexchange_files/wp-embed.min.js.download" id="wp-embed-js"></script>
+<script type="text/javascript" src="./Encrypting and Decrypting Query String in ASP.NET Core - Tutexchange_files/postmessage.min.js.download" id="postmessage-js"></script>
+<script type="text/javascript" src="./Encrypting and Decrypting Query String in ASP.NET Core - Tutexchange_files/jquery.jetpack-resize.min.js.download" id="jetpack_resize-js"></script>
+<script type="text/javascript" src="./Encrypting and Decrypting Query String in ASP.NET Core - Tutexchange_files/queuehandler.min.js.download" id="jetpack_likes_queuehandler-js"></script>
+<script type="text/javascript" id="sharing-js-js-extra">
+/* <![CDATA[ */
+var sharing_js_options = {"lang":"en","counts":"1","is_stats_active":"1"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="./Encrypting and Decrypting Query String in ASP.NET Core - Tutexchange_files/sharing.min.js.download" id="sharing-js-js"></script>
+<script type="text/javascript" id="sharing-js-js-after">
+var windowOpen;
+			jQuery( document.body ).on( 'click', 'a.share-facebook', function() {
+				// If there's another sharing window open, close it.
+				if ( 'undefined' !== typeof windowOpen ) {
+					windowOpen.close();
+				}
+				windowOpen = window.open( jQuery( this ).attr( 'href' ), 'wpcomfacebook', 'menubar=1,resizable=1,width=600,height=400' );
+				return false;
+			});
+</script>
+	<iframe src="./Encrypting and Decrypting Query String in ASP.NET Core - Tutexchange_files/master.html" scrolling="no" id="likes-master" name="likes-master" style="display:none;"></iframe>
+	<div id="likes-other-gravatars"><div class="likes-text"><span>%d</span> bloggers like this:</div><ul class="wpl-avatars sd-like-gravatars"></ul></div>
+	<script src="./Encrypting and Decrypting Query String in ASP.NET Core - Tutexchange_files/e-202105.js.download" defer=""></script>
+<script>
+	_stq = window._stq || [];
+	_stq.push([ 'view', {v:'ext',j:'1:9.3.1',blog:'170780971',post:'1360',tz:'5.5',srv:'tutexchange.com'} ]);
+	_stq.push([ 'clickTrackerInit', '170780971', '1360' ]);
+</script>
+
+
+<img src="./Encrypting and Decrypting Query String in ASP.NET Core - Tutexchange_files/g.gif" alt=":)" width="6" height="5" id="wpstats"><iframe scrolling="no" frameborder="0" allowtransparency="true" src="./Encrypting and Decrypting Query String in ASP.NET Core - Tutexchange_files/widget_iframe.96fd96193cc66c3e11d4c5e4c7c7ec97.html" title="Twitter settings iframe" style="display: none;"></iframe><iframe id="rufous-sandbox" scrolling="no" frameborder="0" allowtransparency="true" allowfullscreen="true" style="position: absolute; visibility: hidden; display: none; width: 0px; height: 0px; padding: 0px; border: none;" title="Twitter analytics iframe" src="./Encrypting and Decrypting Query String in ASP.NET Core - Tutexchange_files/saved_resource.html"></iframe></body></html>

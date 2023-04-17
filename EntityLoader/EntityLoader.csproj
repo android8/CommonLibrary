@@ -1,0 +1,18 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Abstracts\EntityLoaderAbstract.cs" />
+    <Compile Remove="Abstracts\EntityLoaderFactoryAbstract.cs" />
+    <Compile Remove="HttpContextAccessorFactory.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="7.0.2" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="7.0.2" />
+  </ItemGroup>
+
+</Project>
