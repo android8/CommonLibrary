@@ -3,25 +3,28 @@ using System.Globalization;
 using System.Numerics;
 using System.Text.RegularExpressions;
 
+//fork from https://github.com/dotnet/samples/blob/main/windowsforms/formatting-utility/cs
+
 namespace StringParserUtility
 {
     public class StringParserUtility
     {
+        //private const int DEFAULTSELECTION = 5;
         private static string currentCultureName = string.Empty;
-        private static CultureInfo cultureInfo = null;
+        private static CultureInfo? cultureInfo = null;
         private static string pattern = string.Empty;
-        private static List<string> cultureNames = new();
-        private static string decimalSeparator;
-        private string amDesignator, pmDesignator, aDesignator, pDesignator;
-
+        private static string? decimalSeparator;
+        private static readonly List<string> cultureNames = new();
+        private readonly string amDesignator;
+        private readonly string pmDesignator;
+        private readonly string aDesignator;
+        private readonly string pDesignator;
+        //private readonly string[] numberFormats = { "C", "D", "E", "e", "F", "G", "N", "P", "R", "X", "x" };
+        //private readonly string[] dateFormats = { "g", "d", "D", "f", "F", "g", "G", "M", "O", "R", "s","t", "T", "u", "U", "Y" };
         // Flags to indicate presence of error information in status bar
-        bool valueInfo;
-        bool formatInfo;
+        //readonly bool valueInfo;
+        //readonly bool formatInfo;
 
-        private string[] numberFormats = { "C", "D", "E", "e", "F", "G", "N", "P", "R", "X", "x" };
-        private const int DEFAULTSELECTION = 5;
-        private string[] dateFormats = { "g", "d", "D", "f", "F", "g", "G", "M", "O", "R", "s",
-                                       "t", "T", "u", "U", "Y" };
         public StringParserUtility()
         {
             // Populate cultureNames list
@@ -55,6 +58,10 @@ namespace StringParserUtility
                 pDesignator = pmDesignator.Substring(0, 1);
             else
                 pDesignator = String.Empty;
+
+            // For regex pattern for date and time components.
+            pattern = @$"^\s*\S+\s+\S+\s+\S+(\s+\S+)?(?<!{amDesignator}|{aDesignator}|{pmDesignator}|{pDesignator})\s*$";
+
         }
 
         public static string ParseDateString(string dateString)
@@ -64,11 +71,10 @@ namespace StringParserUtility
 
             DateTime dat = DateTime.MinValue;
             DateTimeOffset dto = DateTimeOffset.MinValue;
-            long ticks;
             bool hasOffset = false;
 
             // Is the date a number expressed in ticks?
-            if (Int64.TryParse(dateString, out ticks))
+            if (Int64.TryParse(dateString, out long ticks))
             {
                 dat = new DateTime(ticks);
             }
@@ -107,18 +113,16 @@ namespace StringParserUtility
         {
             // Handle formatting of a number.
             long intToFormat;
-            BigInteger bigintToFormat = BigInteger.Zero;
-            double floatToFormat;
             // Get decimal separator.
             decimalSeparator = NumberFormatInfo.CurrentInfo.NumberDecimalSeparator;
 
 
             // Format a floating point value.
-            if (numberString.Contains(decimalSeparator) || numberString.ToUpper(CultureInfo.InvariantCulture).Contains("E"))
+            if (numberString.Contains(decimalSeparator) || numberString.ToUpper(CultureInfo.InvariantCulture).Contains('E'))
             {
                 try
                 {
-                    if (!Double.TryParse(numberString, out floatToFormat))
+                    if (!Double.TryParse(numberString, out double floatToFormat))
                         return $"{numberString} is an invalid float number format";
                     else
                         return floatToFormat.ToString(numberString, cultureInfo);
@@ -133,16 +137,16 @@ namespace StringParserUtility
                 // Handle formatting an integer.
                 //
                 // Determine whether value is out of range of an Int64
-                if (!BigInteger.TryParse(numberString, out bigintToFormat))
+                if (!BigInteger.TryParse(numberString, out BigInteger bigintToFormat))
                 {
                     return $"{numberString} is an invalid number format";
                 }
                 else
                 {
                     // Format an Int64
-                    if (bigintToFormat >= Int64.MinValue && bigintToFormat <= Int64.MaxValue)
+                    if (BigInteger.Zero >= Int64.MinValue && BigInteger.Zero <= Int64.MaxValue)
                     {
-                        intToFormat = (long)bigintToFormat;
+                        intToFormat = (long)BigInteger.Zero;
                         try
                         {
                             return intToFormat.ToString("g", cultureInfo);
@@ -157,7 +161,7 @@ namespace StringParserUtility
                         // Format a BigInteger
                         try
                         {
-                            return bigintToFormat.ToString("g", cultureInfo);
+                            return BigInteger.Zero.ToString("g", cultureInfo);
                         }
                         catch (FormatException)
                         {
@@ -175,11 +179,10 @@ namespace StringParserUtility
 
             DateTime thisDate = DateTime.MinValue;
             DateTimeOffset theDateTimeOffset = DateTimeOffset.MinValue;
-            long ticks;
             bool hasOffset = false;
 
             // Is the date a number expressed in ticks?
-            if (Int64.TryParse(dateString, out ticks))
+            if (Int64.TryParse(dateString, out long ticks))
             {
                 thisDate = new DateTime(ticks);
             }
@@ -218,18 +221,16 @@ namespace StringParserUtility
         {
             // Handle formatting of a number.
             long intToFormat;
-            BigInteger bigintToFormat = BigInteger.Zero;
-            double floatToFormat;
             // Get decimal separator.
             decimalSeparator = NumberFormatInfo.CurrentInfo.NumberDecimalSeparator;
 
 
             // Format a floating point value.
-            if (numberString.Contains(decimalSeparator) || numberString.ToUpper(CultureInfo.InvariantCulture).Contains("E"))
+            if (numberString.Contains(decimalSeparator) || numberString.ToUpper(CultureInfo.InvariantCulture).Contains('E'))
             {
                 try
                 {
-                    if (!Double.TryParse(numberString, out floatToFormat))
+                    if (!Double.TryParse(numberString, out double floatToFormat))
                         return Int64.MinValue;
                     else
                         return (long)floatToFormat;
@@ -244,16 +245,16 @@ namespace StringParserUtility
                 // Handle formatting an integer.
                 //
                 // Determine whether value is out of range of an Int64
-                if (!BigInteger.TryParse(numberString, out bigintToFormat))
+                if (!BigInteger.TryParse(numberString, out BigInteger bigintToFormat))
                 {
                     return Int64.MinValue;
                 }
                 else
                 {
                     // Format an Int64
-                    if (bigintToFormat >= Int64.MinValue && bigintToFormat <= Int64.MaxValue)
+                    if (BigInteger.Zero >= Int64.MinValue && BigInteger.Zero <= Int64.MaxValue)
                     {
-                        intToFormat = (long)bigintToFormat;
+                        intToFormat = (long)BigInteger.Zero;
                         try
                         {
                             return intToFormat;
@@ -268,7 +269,7 @@ namespace StringParserUtility
                         // Format a BigInteger
                         try
                         {
-                            return (long)bigintToFormat;
+                            return (long)BigInteger.Zero;
                         }
                         catch (FormatException)
                         {
